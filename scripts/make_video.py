@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -173,6 +174,12 @@ def main() -> None:
 
     segs = sorted(p for p in seg_dir.glob("0*.mp4") if not p.name.endswith(".silent.mp4"))
     concat(segs, args.out)
+    # YouTube 向けに音量をそろえる（-16 LUFS）。映像は再エンコードしない
+    tmp = args.out.with_suffix(".loudnorm.mp4")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(args.out), "-c:v", "copy",
+                    "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+                    "-movflags", "+faststart", str(tmp)], check=True)
+    tmp.replace(args.out)
     total = wav_duration(args.out)
     print(f"{args.out}  {total:.1f} 秒  ({len(segs)} 区間)")
 
