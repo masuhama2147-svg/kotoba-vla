@@ -1,0 +1,25 @@
+# モデルもシミュレータも要らない検査を、push ごとに回す（数秒で終わる）
+name: tests
+on: [push, pull_request]
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.12"]   # シミュレータ側は 3.10、AI / VLA 側は 3.12 以降で動く
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install numpy msgpack pytest
+      - run: python -m pytest -q
+      - name: スキルカタログの整合性
+        run: |
+          python - <<'PY'
+          import json
+          c = json.load(open("data/skill_catalog.json"))
+          assert len(c["skills"]) == 40
+          assert sum(len(s["paraphrases"]) for s in c["skills"]) == 2052
+          print("catalog ok")
+          PY

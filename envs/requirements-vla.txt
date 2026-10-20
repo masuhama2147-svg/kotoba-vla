@@ -1,0 +1,13 @@
+# VLA 推論サーバ（π0.5）。PARC2026 本選 T1 最終提出と同じ版（Python 3.10 以上）
+torch==2.8.0
+torchvision==0.23.0
+transformers==5.3.0
+safetensors
+huggingface-hub
+draccus==0.10.0
+einops
+gymnasium
+fastapi
+uvicorn
+msgpack
+# lerobot 0.5.2 は PyPI に無い。PARC2026 で Python 3.10 向けに整えた版を third_party/lerobot052 に置く

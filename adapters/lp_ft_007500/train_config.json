@@ -1,0 +1,257 @@
+{
+    "dataset": {
+        "repo_id": "local/libero_plus",
+        "root": "<data_root>/libero_plus_lerobot",
+        "episodes": null,
+        "image_transforms": {
+            "enable": false,
+            "max_num_transforms": 3,
+            "random_order": false,
+            "tfs": {
+                "brightness": {
+                    "weight": 1.0,
+                    "type": "ColorJitter",
+                    "kwargs": {
+                        "brightness": [
+                            0.8,
+                            1.2
+                        ]
+                    }
+                },
+                "contrast": {
+                    "weight": 1.0,
+                    "type": "ColorJitter",
+                    "kwargs": {
+                        "contrast": [
+                            0.8,
+                            1.2
+                        ]
+                    }
+                },
+                "saturation": {
+                    "weight": 1.0,
+                    "type": "ColorJitter",
+                    "kwargs": {
+                        "saturation": [
+                            0.5,
+                            1.5
+                        ]
+                    }
+                },
+                "hue": {
+                    "weight": 1.0,
+                    "type": "ColorJitter",
+                    "kwargs": {
+                        "hue": [
+                            -0.05,
+                            0.05
+                        ]
+                    }
+                },
+                "sharpness": {
+                    "weight": 1.0,
+                    "type": "SharpnessJitter",
+                    "kwargs": {
+                        "sharpness": [
+                            0.5,
+                            1.5
+                        ]
+                    }
+                },
+                "affine": {
+                    "weight": 1.0,
+                    "type": "RandomAffine",
+                    "kwargs": {
+                        "degrees": [
+                            -5.0,
+                            5.0
+                        ],
+                        "translate": [
+                            0.05,
+                            0.05
+                        ]
+                    }
+                }
+            }
+        },
+        "revision": null,
+        "use_imagenet_stats": true,
+        "video_backend": "torchcodec",
+        "return_uint8": false,
+        "streaming": false
+    },
+    "env": null,
+    "policy": {
+        "type": "pi05",
+        "n_obs_steps": 1,
+        "input_features": {
+            "observation.images.front": {
+                "type": "VISUAL",
+                "shape": [
+                    3,
+                    256,
+                    256
+                ]
+            },
+            "observation.images.wrist": {
+                "type": "VISUAL",
+                "shape": [
+                    3,
+                    256,
+                    256
+                ]
+            },
+            "observation.state": {
+                "type": "STATE",
+                "shape": [
+                    8
+                ]
+            },
+            "observation.images.empty_camera_0": {
+                "type": "VISUAL",
+                "shape": [
+                    3,
+                    224,
+                    224
+                ]
+            }
+        },
+        "output_features": {
+            "action": {
+                "type": "ACTION",
+                "shape": [
+                    7
+                ]
+            }
+        },
+        "device": "cuda",
+        "use_amp": false,
+        "use_peft": true,
+        "push_to_hub": false,
+        "repo_id": null,
+        "private": null,
+        "tags": null,
+        "license": null,
+        "pretrained_path": "lerobot/pi05_libero_finetuned_v044",
+        "paligemma_variant": "gemma_2b",
+        "action_expert_variant": "gemma_300m",
+        "dtype": "bfloat16",
+        "chunk_size": 50,
+        "n_action_steps": 10,
+        "max_state_dim": 32,
+        "max_action_dim": 32,
+        "num_inference_steps": 10,
+        "time_sampling_beta_alpha": 1.5,
+        "time_sampling_beta_beta": 1.0,
+        "time_sampling_scale": 0.999,
+        "time_sampling_offset": 0.001,
+        "min_period": 0.004,
+        "max_period": 4.0,
+        "drop_n_last_frames": 49,
+        "drop_n_first_frames": 0,
+        "use_relative_actions": false,
+        "relative_exclude_joints": [
+            "gripper"
+        ],
+        "action_feature_names": [
+            "action_0",
+            "action_1",
+            "action_2",
+            "action_3",
+            "action_4",
+            "action_5",
+            "action_6"
+        ],
+        "rtc_config": null,
+        "image_resolution": [
+            224,
+            224
+        ],
+        "empty_cameras": 1,
+        "tokenizer_max_length": 200,
+        "normalization_mapping": {
+            "VISUAL": "IDENTITY",
+            "STATE": "MEAN_STD",
+            "ACTION": "MEAN_STD"
+        },
+        "gradient_checkpointing": false,
+        "compile_model": false,
+        "compile_mode": "max-autotune",
+        "freeze_vision_encoder": false,
+        "train_expert_only": false,
+        "optimizer_lr": 2e-05,
+        "optimizer_betas": [
+            0.9,
+            0.95
+        ],
+        "optimizer_eps": 1e-08,
+        "optimizer_weight_decay": 0.01,
+        "optimizer_grad_clip_norm": 1.0,
+        "scheduler_warmup_steps": 200,
+        "scheduler_decay_steps": 8000,
+        "scheduler_decay_lr": 2e-06
+    },
+    "output_dir": "<output_dir>/lprun",
+    "job_name": "lp_ft",
+    "resume": false,
+    "seed": 3100,
+    "cudnn_deterministic": false,
+    "num_workers": 4,
+    "batch_size": 8,
+    "prefetch_factor": 4,
+    "persistent_workers": true,
+    "steps": 12000,
+    "eval_freq": 20000,
+    "log_freq": 100,
+    "tolerance_s": 0.0001,
+    "save_checkpoint": true,
+    "save_freq": 1500,
+    "use_policy_training_preset": true,
+    "optimizer": {
+        "type": "adamw",
+        "lr": 2e-05,
+        "weight_decay": 0.01,
+        "grad_clip_norm": 1.0,
+        "betas": [
+            0.9,
+            0.95
+        ],
+        "eps": 1e-08
+    },
+    "scheduler": {
+        "type": "cosine_decay_with_warmup",
+        "num_warmup_steps": 200,
+        "num_decay_steps": 8000,
+        "peak_lr": 2e-05,
+        "decay_lr": 2e-06
+    },
+    "eval": {
+        "n_episodes": 50,
+        "batch_size": 11,
+        "use_async_envs": true
+    },
+    "wandb": {
+        "enable": false,
+        "disable_artifact": false,
+        "project": "lerobot",
+        "entity": null,
+        "notes": null,
+        "run_id": null,
+        "mode": null,
+        "add_tags": true
+    },
+    "peft": {
+        "target_modules": null,
+        "full_training_modules": null,
+        "method_type": "LORA",
+        "init_type": null,
+        "r": 16
+    },
+    "use_rabc": false,
+    "rabc_progress_path": null,
+    "rabc_kappa": 0.01,
+    "rabc_epsilon": 1e-06,
+    "rabc_head_mode": "sparse",
+    "rename_map": {},
+    "checkpoint_path": null
+}

@@ -1,0 +1,74 @@
+{
+ "note": "LIBERO-Goal の 10 スキルに対する日本語の依頼文（評価用に作成）。1 スキルあたり 3 通り: 素直な言い方 / くだけた言い方 / 目的だけを言う遠回しな言い方。",
+ "single": {
+  "open_the_middle_drawer_of_the_cabinet": [
+   "棚の真ん中の引き出しを開けて",
+   "まんなかの引き出し、開けといてくれる？",
+   "キャビネットの中段に物をしまいたいから、そこを開けておいて"
+  ],
+  "put_the_bowl_on_the_stove": [
+   "ボウルをコンロの上に置いて",
+   "そのお椀、コンロにのせといて",
+   "スープを温めたいので、器を加熱するところに移して"
+  ],
+  "put_the_wine_bottle_on_top_of_the_cabinet": [
+   "ワインボトルを棚の上に置いて",
+   "ワイン、キャビネットの上にのせておいてくれる？",
+   "ワインは子どもの手が届かない高いところ、棚のてっぺんに上げておいて"
+  ],
+  "open_the_top_drawer_and_put_the_bowl_inside": [
+   "一番上の引き出しを開けて、ボウルをその中に入れて",
+   "上の引き出しにお椀しまっといて",
+   "ボウルはもう使わないから、上の段の引き出しに片付けて"
+  ],
+  "put_the_bowl_on_top_of_the_cabinet": [
+   "ボウルを棚の上に置いて",
+   "お椀、キャビネットの上にのせといて",
+   "ボウルは使い終わったから、棚の天板の上に上げておいて"
+  ],
+  "push_the_plate_to_the_front_of_the_stove": [
+   "お皿をコンロの手前まで押して",
+   "皿、コンロの前に寄せといて",
+   "盛り付けしやすいように、平皿をコンロの前までずらしておいて"
+  ],
+  "put_the_cream_cheese_in_the_bowl": [
+   "クリームチーズをボウルに入れて",
+   "クリームチーズ、お椀に入れといて",
+   "ディップを作りたいから、チーズの箱を器の中に入れて"
+  ],
+  "turn_on_the_stove": [
+   "コンロの火をつけて",
+   "コンロつけといてくれる？",
+   "お湯を沸かしたいから、加熱器のスイッチを入れて"
+  ],
+  "put_the_bowl_on_the_plate": [
+   "ボウルをお皿の上にのせて",
+   "お椀、皿にのせといて",
+   "配膳したいので、器を平皿の上に重ねておいて"
+  ],
+  "put_the_wine_bottle_on_the_rack": [
+   "ワインボトルをワインラックに置いて",
+   "ワイン、ラックに戻しといて",
+   "ワインは保管用の棚に寝かせて片付けておいて"
+  ]
+ },
+ "multi": [
+  {"text": "これから料理をするので、コンロの火をつけて、そのあとボウルをコンロの上に置いてくれる？",
+   "expect": ["turn_on_the_stove", "put_the_bowl_on_the_stove"]},
+  {"text": "クリームチーズをボウルに入れてから、そのボウルをお皿にのせて",
+   "expect": ["put_the_cream_cheese_in_the_bowl", "put_the_bowl_on_the_plate"]},
+  {"text": "ワインをラックに戻して、ついでに真ん中の引き出しも開けといて",
+   "expect": ["put_the_wine_bottle_on_the_rack", "open_the_middle_drawer_of_the_cabinet"]},
+  {"text": "お皿をコンロの前に寄せて、コンロの火もつけておいて",
+   "expect": ["push_the_plate_to_the_front_of_the_stove", "turn_on_the_stove"]},
+  {"text": "ワインボトルを棚の上に片付けてから、コンロをつけて",
+   "expect": ["put_the_wine_bottle_on_top_of_the_cabinet", "turn_on_the_stove"]},
+  {"text": "真ん中の引き出しを開けて、それからワインをラックに置いて、最後にコンロをつけて",
+   "expect": ["open_the_middle_drawer_of_the_cabinet", "put_the_wine_bottle_on_the_rack", "turn_on_the_stove"]}
+ ],
+ "unsupported": [
+  "冷蔵庫から牛乳を出して",
+  "お皿を洗っておいて",
+  "窓を開けて換気して"
+ ]
+}

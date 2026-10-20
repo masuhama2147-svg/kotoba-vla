@@ -1,0 +1,59 @@
+{
+ "note": "ホールドアウト評価用。プロンプト調整（開発セット eval_commands_ja.json で実施）の後に新しく書いた依頼文。このセットを見てプロンプトを変更しない。",
+ "single": {
+  "open_the_middle_drawer_of_the_cabinet": [
+   "キャビネットの2段目の引き出しを引き出してもらえますか",
+   "中段の引き出し、ちょっと開けて"
+  ],
+  "put_the_bowl_on_the_stove": [
+   "黒いボウルをコンロの上へ移動させて",
+   "お椀をあたためたいから、コンロにのせて"
+  ],
+  "put_the_wine_bottle_on_top_of_the_cabinet": [
+   "ボトルを引き出し付きの棚の天板に立てておいて",
+   "ワインボトルはキャビネットの上に避難させといて"
+  ],
+  "open_the_top_drawer_and_put_the_bowl_inside": [
+   "ボウルを最上段の引き出しにしまって",
+   "いちばん上の引き出しを開けて、お椀をそこへ"
+  ],
+  "put_the_bowl_on_top_of_the_cabinet": [
+   "お椀をキャビネットの天板へ上げて",
+   "ボウルは邪魔だから棚の上に置いといて"
+  ],
+  "push_the_plate_to_the_front_of_the_stove": [
+   "お皿をすべらせてコンロの前に持っていって",
+   "プレートをコンロの手前に移動して"
+  ],
+  "put_the_cream_cheese_in_the_bowl": [
+   "チーズをボウルの中に入れておいてください",
+   "クリームチーズの箱、お椀に放り込んどいて"
+  ],
+  "turn_on_the_stove": [
+   "コンロのスイッチをオンにして",
+   "調理を始めるからコンロを点火して"
+  ],
+  "put_the_bowl_on_the_plate": [
+   "ボウルを皿に重ねて置いて",
+   "お椀をお皿の上に移して"
+  ],
+  "put_the_wine_bottle_on_the_rack": [
+   "ワインをワインラックにしまって",
+   "ボトルをラックに寝かせて保管して"
+  ]
+ },
+ "multi": [
+  {"text": "コンロをつけたら、お皿をその前に寄せておいて",
+   "expect": ["turn_on_the_stove", "push_the_plate_to_the_front_of_the_stove"]},
+  {"text": "まずワインをキャビネットの上に置いて、次にお椀をお皿にのせて",
+   "expect": ["put_the_wine_bottle_on_top_of_the_cabinet", "put_the_bowl_on_the_plate"]},
+  {"text": "チーズをボウルに入れて、そのあとコンロのスイッチを入れて",
+   "expect": ["put_the_cream_cheese_in_the_bowl", "turn_on_the_stove"]},
+  {"text": "引き出しの中段を開けてから、ボウルをコンロにのせて",
+   "expect": ["open_the_middle_drawer_of_the_cabinet", "put_the_bowl_on_the_stove"]}
+ ],
+ "unsupported": [
+  "コーヒーを淹れて",
+  "床に落ちたゴミを拾って"
+ ]
+}

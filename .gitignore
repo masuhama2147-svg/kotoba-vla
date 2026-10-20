@@ -1,0 +1,16 @@
+# 環境
+.venv/
+.venv-sim/
+.venv-vla/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# 大きな取得物（scripts/setup_third_party.sh で再取得する）
+third_party/
+weights/
+.libero/
+
+# 実行結果（動画・中間生成物）。評価の集計 JSON は results/ に固定して残す
+outputs/

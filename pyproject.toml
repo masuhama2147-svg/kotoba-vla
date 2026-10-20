@@ -1,0 +1,9 @@
+[project]
+name = "kotoba-vla"
+version = "0.1.0"
+description = "日本語の音声指示を VLA (π0.5) が理解できる言葉へ翻訳し、LIBERO 上でロボットに実行させる"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

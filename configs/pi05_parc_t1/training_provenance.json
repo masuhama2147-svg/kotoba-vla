@@ -1,0 +1,9 @@
+{
+  "base": "lerobot/pi05_libero_finetuned_v044 (compile_model / gradient_checkpointing を false、n_action_steps を 12 に変更)",
+  "adapter": "adapters/lp_ft_007500",
+  "scale": 0.1,
+  "K": 12,
+  "adapter_sha256": "028a0c31dd54037cd42178166ceaa215bf2ce4ff599fc73cf2ea066c524c4897",
+  "model_sha256": "126d63db21429a1ce35293779cc9342ed819ffe87271008ee94b9277aa45368d",
+  "selection_data": "public distributed local compe; no inferred hidden variants"
+}

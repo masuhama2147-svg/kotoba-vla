@@ -1,0 +1,11 @@
+# 言語ブリッジ・評価集計・動画合成（Python 3.13 で確認, Apple Silicon）
+mlx==0.32.0
+mlx-lm
+mlx-whisper
+torch==2.8.0
+transformers
+sentence-transformers
+huggingface_hub
+numpy
+pillow
+pytest
