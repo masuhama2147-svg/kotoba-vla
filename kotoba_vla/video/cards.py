@@ -73,7 +73,7 @@ def background_card(c: Canvas, t: float, cues=(0.8, 3.2, 5.6, 8.2)) -> None:
         (cues[1], "19 / 20", "「ramekin の上の器」を取る課題で、別の器を運んだ回数",
          "言葉と物体の対応づけ（接地）に失敗すると、自信満々に違うことをする"),
         (cues[2], "0 / 30", "日本語の依頼を LLM で英訳した文が、学習時の文と一致した数",
-         "（本課題で測定）翻訳しただけでは「VLA に通じる言葉」にならない"),
+         "（本課題で測定）英訳しても、学習時の言い回しとは一字一句そろわない"),
     ]
     y = 230
     for start, big, head, sub in rows:
@@ -157,7 +157,7 @@ def closing_card(c: Canvas, t: float) -> None:
         scene_background(c, TITLE_BG, darkness=0.86)
     c.text((80, 70), "まとめ", size=50, bold=True)
     pts = [
-        ("言い回しの壁を、LLM の通訳で越えた", "日本語・遠回しな英語の依頼を、VLA が学習時に見た正準文へ変換して成功率を回復"),
+        ("言い回しの壁を、LLM の通訳で越えた", "遠回しな依頼でも成功率を正準文の水準へ戻し、「別の作業をしてしまう」失敗をなくした"),
         ("1 つの依頼を、複数の VLA スキルの連続実行に分解", "スキル間で姿勢を戻し、BDDL のゴールで成否を確かめ、失敗は再試行"),
         ("PARC2026 の資産をそのまま再利用", "最終提出と同じ π0.5＋LoRA を SHA-256 一致で再現し、評価の作法も持ち込んだ"),
     ]
@@ -178,7 +178,8 @@ SERIES_BLUE, SERIES_ORANGE = (57, 135, 229), (217, 89, 38)
 
 
 def grouped_bars(c: Canvas, box, title: str, groups: list[tuple[str, list[tuple[str, float, str, tuple]]]],
-                 t: float, start: float, reference: tuple[str, float] | None = None, note: str = "") -> None:
+                 t: float, start: float, reference: tuple[str, float] | None = None, note: str = "",
+                 label_space: int = 200) -> None:
     """groups: [(グループ名, [(系列名, 値, 値ラベル, 色), ...]), ...]。reference は破線の基準値。"""
     a = fade(t, start)
     if a <= 0:
@@ -188,8 +189,14 @@ def grouped_bars(c: Canvas, box, title: str, groups: list[tuple[str, list[tuple[
     c.text((x0 + 28, y0 + 22), title, size=30, bold=True, color=_blend(TEXT, a))
     if note:
         c.text((x0 + 28, y0 + 66), note, size=21, color=_blend(MUTED, a))
-    bar_x, bar_max = x0 + 360, (x1 - x0) - 360 - 200
+    bar_x, bar_max = x0 + 360, (x1 - x0) - 360 - label_space
     grow = ease((t - start - 0.3) / 0.8)
+    if reference:  # 基準の破線は棒と数値ラベルの下に敷く
+        rx = bar_x + int(bar_max * reference[1])
+        y_end = y0 + 116 + sum(44 * len(sr) + 22 for _, sr in groups)
+        for yy in range(y0 + 104, y_end - 10, 16):
+            c.d.line((rx, yy, rx, yy + 8), fill=_blend(MUTED, a * 0.6), width=2)
+        c.text((rx, y_end - 8), reference[0], size=20, color=_blend(MUTED, a), anchor="ma")
     y = y0 + 116
     for gname, series in groups:
         c.text((x0 + 28, y + 22), gname, size=26, bold=True, color=_blend(TEXT, a))
@@ -199,11 +206,6 @@ def grouped_bars(c: Canvas, box, title: str, groups: list[tuple[str, list[tuple[
             c.text((bar_x + bw + 14, y + 2), vlabel, size=25, bold=True, color=_blend(TEXT, a))
             y += 44
         y += 22
-    if reference:
-        rx = bar_x + int(bar_max * reference[1])
-        for yy in range(y0 + 104, y - 10, 16):
-            c.d.line((rx, yy, rx, yy + 8), fill=_blend(MUTED, a), width=2)
-        c.text((rx, y - 8), reference[0], size=20, color=_blend(MUTED, a), anchor="ma")
 
 
 def legend(c: Canvas, xy, items: list[tuple[str, tuple]], t: float, start: float) -> None:

@@ -1,0 +1,42 @@
+{
+ "canonical": {
+  "n": 30,
+  "success": 28,
+  "clean": 23,
+  "fail_did_other_task": 0,
+  "success_rate": 0.933,
+  "clean_rate": 0.767
+ },
+ "libero_plus_paraphrase": {
+  "n": 90,
+  "success": 67,
+  "clean": 57,
+  "fail_did_other_task": 19,
+  "success_rate": 0.744,
+  "clean_rate": 0.633
+ },
+ "plus_kotoba_bridge": {
+  "n": 90,
+  "success": 81,
+  "clean": 66,
+  "fail_did_other_task": 0,
+  "success_rate": 0.9,
+  "clean_rate": 0.733
+ },
+ "ja_direct_translate": {
+  "n": 90,
+  "success": 81,
+  "clean": 69,
+  "fail_did_other_task": 6,
+  "success_rate": 0.9,
+  "clean_rate": 0.767
+ },
+ "ja_kotoba_bridge": {
+  "n": 90,
+  "success": 84,
+  "clean": 69,
+  "fail_did_other_task": 0,
+  "success_rate": 0.933,
+  "clean_rate": 0.767
+ }
+}

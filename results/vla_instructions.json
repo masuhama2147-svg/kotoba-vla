@@ -1,0 +1,1050 @@
+[
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "canonical",
+  "variant": 0,
+  "instruction": "put the cream cheese in the bowl"
+ },
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "libero_plus_paraphrase",
+  "variant": 0,
+  "instruction": "On this lovely morning could you please put the cream cheese in the bowl"
+ },
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "plus_kotoba_bridge",
+  "variant": 0,
+  "source_text": "On this lovely morning could you please put the cream cheese in the bowl",
+  "planned": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "instruction": "put the cream cheese in the bowl"
+ },
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "libero_plus_paraphrase",
+  "variant": 1,
+  "instruction": "place the spreadable dairy product into the mixing vessel"
+ },
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "plus_kotoba_bridge",
+  "variant": 1,
+  "source_text": "place the spreadable dairy product into the mixing vessel",
+  "planned": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "instruction": "put the cream cheese in the bowl"
+ },
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "libero_plus_paraphrase",
+  "variant": 2,
+  "instruction": "Place the cream cheese into the bowl"
+ },
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "plus_kotoba_bridge",
+  "variant": 2,
+  "source_text": "Place the cream cheese into the bowl",
+  "planned": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "instruction": "put the cream cheese in the bowl"
+ },
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "ja_direct_translate",
+  "variant": 0,
+  "ja": "クリームチーズをボウルに入れて",
+  "instruction": "Place the cream cheese into the bowl."
+ },
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "ja_kotoba_bridge",
+  "variant": 0,
+  "ja": "クリームチーズをボウルに入れて",
+  "planned": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "instruction": "put the cream cheese in the bowl"
+ },
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "ja_direct_translate",
+  "variant": 1,
+  "ja": "クリームチーズ、お椀に入れといて",
+  "instruction": "Place the cream cheese in the bowl."
+ },
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "ja_kotoba_bridge",
+  "variant": 1,
+  "ja": "クリームチーズ、お椀に入れといて",
+  "planned": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "instruction": "put the cream cheese in the bowl"
+ },
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "ja_direct_translate",
+  "variant": 2,
+  "ja": "ディップを作りたいから、チーズの箱を器の中に入れて",
+  "instruction": "Place the cheese box inside the container."
+ },
+ {
+  "goal_skill": "put_the_cream_cheese_in_the_bowl",
+  "condition": "ja_kotoba_bridge",
+  "variant": 2,
+  "ja": "ディップを作りたいから、チーズの箱を器の中に入れて",
+  "planned": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "instruction": "put the cream cheese in the bowl"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "canonical",
+  "variant": 0,
+  "instruction": "put the wine bottle on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "libero_plus_paraphrase",
+  "variant": 0,
+  "instruction": "Before leaving dont forget to put the wine bottle on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "plus_kotoba_bridge",
+  "variant": 0,
+  "source_text": "Before leaving dont forget to put the wine bottle on top of the cabinet",
+  "planned": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "instruction": "put the wine bottle on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "libero_plus_paraphrase",
+  "variant": 1,
+  "instruction": "Place the container holding fermented grape drink on the upper storage unit"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "plus_kotoba_bridge",
+  "variant": 1,
+  "source_text": "Place the container holding fermented grape drink on the upper storage unit",
+  "planned": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "instruction": "put the wine bottle on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "libero_plus_paraphrase",
+  "variant": 2,
+  "instruction": "To keep it out of reach place the wine bottle on the upper part of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "plus_kotoba_bridge",
+  "variant": 2,
+  "source_text": "To keep it out of reach place the wine bottle on the upper part of the cabinet",
+  "planned": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "instruction": "put the wine bottle on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "ja_direct_translate",
+  "variant": 0,
+  "ja": "ワインボトルを棚の上に置いて",
+  "instruction": "Place the wine bottle on top of the shelf."
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "ja_kotoba_bridge",
+  "variant": 0,
+  "ja": "ワインボトルを棚の上に置いて",
+  "planned": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "instruction": "put the wine bottle on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "ja_direct_translate",
+  "variant": 1,
+  "ja": "ワイン、キャビネットの上にのせておいてくれる？",
+  "instruction": "Place the wine on top of the cabinet."
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "ja_kotoba_bridge",
+  "variant": 1,
+  "ja": "ワイン、キャビネットの上にのせておいてくれる？",
+  "planned": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "instruction": "put the wine bottle on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "ja_direct_translate",
+  "variant": 2,
+  "ja": "ワインは子どもの手が届かない高いところ、棚のてっぺんに上げておいて",
+  "instruction": "Place the wine on the top shelf of the cabinet where it is out of reach of children."
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "condition": "ja_kotoba_bridge",
+  "variant": 2,
+  "ja": "ワインは子どもの手が届かない高いところ、棚のてっぺんに上げておいて",
+  "planned": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "instruction": "put the wine bottle on top of the cabinet"
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "canonical",
+  "variant": 0,
+  "instruction": "open the middle drawer of the cabinet"
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "libero_plus_paraphrase",
+  "variant": 0,
+  "instruction": "Pull out the central storage compartment in the furniture used for storing items"
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "plus_kotoba_bridge",
+  "variant": 0,
+  "source_text": "Pull out the central storage compartment in the furniture used for storing items",
+  "planned": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "instruction": "open the middle drawer of the cabinet"
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "libero_plus_paraphrase",
+  "variant": 1,
+  "instruction": "Please make sure the middle drawer of the cabinet is open"
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "plus_kotoba_bridge",
+  "variant": 1,
+  "source_text": "Please make sure the middle drawer of the cabinet is open",
+  "planned": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "instruction": "open the middle drawer of the cabinet"
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "libero_plus_paraphrase",
+  "variant": 2,
+  "instruction": "slide out the central storage compartment of the wooden structure designed for holding items"
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "plus_kotoba_bridge",
+  "variant": 2,
+  "source_text": "slide out the central storage compartment of the wooden structure designed for holding items",
+  "planned": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "instruction": "open the middle drawer of the cabinet"
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "ja_direct_translate",
+  "variant": 0,
+  "ja": "棚の真ん中の引き出しを開けて",
+  "instruction": "Open the middle drawer on the shelf."
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "ja_kotoba_bridge",
+  "variant": 0,
+  "ja": "棚の真ん中の引き出しを開けて",
+  "planned": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "instruction": "open the middle drawer of the cabinet"
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "ja_direct_translate",
+  "variant": 1,
+  "ja": "まんなかの引き出し、開けといてくれる？",
+  "instruction": "Open the middle drawer."
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "ja_kotoba_bridge",
+  "variant": 1,
+  "ja": "まんなかの引き出し、開けといてくれる？",
+  "planned": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "instruction": "open the middle drawer of the cabinet"
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "ja_direct_translate",
+  "variant": 2,
+  "ja": "キャビネットの中段に物をしまいたいから、そこを開けておいて",
+  "instruction": "Open the middle section of the cabinet."
+ },
+ {
+  "goal_skill": "open_the_middle_drawer_of_the_cabinet",
+  "condition": "ja_kotoba_bridge",
+  "variant": 2,
+  "ja": "キャビネットの中段に物をしまいたいから、そこを開けておいて",
+  "planned": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "instruction": "open the middle drawer of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "canonical",
+  "variant": 0,
+  "instruction": "put the bowl on the plate"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "libero_plus_paraphrase",
+  "variant": 0,
+  "instruction": "Make sure the bowl ends up on the plate"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "plus_kotoba_bridge",
+  "variant": 0,
+  "source_text": "Make sure the bowl ends up on the plate",
+  "planned": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "instruction": "put the bowl on the plate"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "libero_plus_paraphrase",
+  "variant": 1,
+  "instruction": "Put the bowl on the plate"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "plus_kotoba_bridge",
+  "variant": 1,
+  "source_text": "Put the bowl on the plate",
+  "planned": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "instruction": "put the bowl on the plate"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "libero_plus_paraphrase",
+  "variant": 2,
+  "instruction": "Place the bowl on top of the plate please"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "plus_kotoba_bridge",
+  "variant": 2,
+  "source_text": "Place the bowl on top of the plate please",
+  "planned": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "instruction": "put the bowl on the plate"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "ja_direct_translate",
+  "variant": 0,
+  "ja": "ボウルをお皿の上にのせて",
+  "instruction": "Place the bowl on top of the plate."
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "ja_kotoba_bridge",
+  "variant": 0,
+  "ja": "ボウルをお皿の上にのせて",
+  "planned": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "instruction": "put the bowl on the plate"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "ja_direct_translate",
+  "variant": 1,
+  "ja": "お椀、皿にのせといて",
+  "instruction": "Place the bowl on the plate."
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "ja_kotoba_bridge",
+  "variant": 1,
+  "ja": "お椀、皿にのせといて",
+  "planned": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "instruction": "put the bowl on the plate"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "ja_direct_translate",
+  "variant": 2,
+  "ja": "配膳したいので、器を平皿の上に重ねておいて",
+  "instruction": "Place the dishes on top of the serving tray."
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_plate",
+  "condition": "ja_kotoba_bridge",
+  "variant": 2,
+  "ja": "配膳したいので、器を平皿の上に重ねておいて",
+  "planned": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "instruction": "put the bowl on the plate"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "canonical",
+  "variant": 0,
+  "instruction": "put the wine bottle on the rack"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "libero_plus_paraphrase",
+  "variant": 0,
+  "instruction": "The wine bottle belongs on the rack please place it there carefully"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "plus_kotoba_bridge",
+  "variant": 0,
+  "source_text": "The wine bottle belongs on the rack please place it there carefully",
+  "planned": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "instruction": "put the wine bottle on the rack"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "libero_plus_paraphrase",
+  "variant": 1,
+  "instruction": "Ensure the wine bottle is placed on the rack"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "plus_kotoba_bridge",
+  "variant": 1,
+  "source_text": "Ensure the wine bottle is placed on the rack",
+  "planned": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "instruction": "put the wine bottle on the rack"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "libero_plus_paraphrase",
+  "variant": 2,
+  "instruction": "Put the wine bottle on the rack but make sure its the one in the dining room"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "plus_kotoba_bridge",
+  "variant": 2,
+  "source_text": "Put the wine bottle on the rack but make sure its the one in the dining room",
+  "planned": [],
+  "instruction": ""
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "ja_direct_translate",
+  "variant": 0,
+  "ja": "ワインボトルをワインラックに置いて",
+  "instruction": "Place the wine bottle in the wine rack."
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "ja_kotoba_bridge",
+  "variant": 0,
+  "ja": "ワインボトルをワインラックに置いて",
+  "planned": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "instruction": "put the wine bottle on the rack"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "ja_direct_translate",
+  "variant": 1,
+  "ja": "ワイン、ラックに戻しといて",
+  "instruction": "Return the wine to the rack."
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "ja_kotoba_bridge",
+  "variant": 1,
+  "ja": "ワイン、ラックに戻しといて",
+  "planned": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "instruction": "put the wine bottle on the rack"
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "ja_direct_translate",
+  "variant": 2,
+  "ja": "ワインは保管用の棚に寝かせて片付けておいて",
+  "instruction": "Place the wine bottles on the storage shelf in an upright position."
+ },
+ {
+  "goal_skill": "put_the_wine_bottle_on_the_rack",
+  "condition": "ja_kotoba_bridge",
+  "variant": 2,
+  "ja": "ワインは保管用の棚に寝かせて片付けておいて",
+  "planned": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "instruction": "put the wine bottle on the rack"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "canonical",
+  "variant": 0,
+  "instruction": "put the bowl on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "libero_plus_paraphrase",
+  "variant": 0,
+  "instruction": "Ensure the bowl is placed on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "plus_kotoba_bridge",
+  "variant": 0,
+  "source_text": "Ensure the bowl is placed on top of the cabinet",
+  "planned": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "instruction": "put the bowl on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "libero_plus_paraphrase",
+  "variant": 1,
+  "instruction": "Place the dish above the cupboard"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "plus_kotoba_bridge",
+  "variant": 1,
+  "source_text": "Place the dish above the cupboard",
+  "planned": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "instruction": "put the bowl on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "libero_plus_paraphrase",
+  "variant": 2,
+  "instruction": "position the dish on the surface of the cupboard"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "plus_kotoba_bridge",
+  "variant": 2,
+  "source_text": "position the dish on the surface of the cupboard",
+  "planned": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "instruction": "put the bowl on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "ja_direct_translate",
+  "variant": 0,
+  "ja": "ボウルを棚の上に置いて",
+  "instruction": "Place the bowl on top of the shelf."
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "ja_kotoba_bridge",
+  "variant": 0,
+  "ja": "ボウルを棚の上に置いて",
+  "planned": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "instruction": "put the bowl on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "ja_direct_translate",
+  "variant": 1,
+  "ja": "お椀、キャビネットの上にのせといて",
+  "instruction": "Place the bowl on top of the cabinet."
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "ja_kotoba_bridge",
+  "variant": 1,
+  "ja": "お椀、キャビネットの上にのせといて",
+  "planned": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "instruction": "put the bowl on top of the cabinet"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "ja_direct_translate",
+  "variant": 2,
+  "ja": "ボウルは使い終わったから、棚の天板の上に上げておいて",
+  "instruction": "Place the bowl on top of the shelf."
+ },
+ {
+  "goal_skill": "put_the_bowl_on_top_of_the_cabinet",
+  "condition": "ja_kotoba_bridge",
+  "variant": 2,
+  "ja": "ボウルは使い終わったから、棚の天板の上に上げておいて",
+  "planned": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "instruction": "put the bowl on top of the cabinet"
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "canonical",
+  "variant": 0,
+  "instruction": "open the top drawer and put the bowl inside"
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "libero_plus_paraphrase",
+  "variant": 0,
+  "instruction": "Could you place the bowl in the top drawer for me please"
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "plus_kotoba_bridge",
+  "variant": 0,
+  "source_text": "Could you place the bowl in the top drawer for me please",
+  "planned": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "instruction": "open the top drawer and put the bowl inside"
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "libero_plus_paraphrase",
+  "variant": 1,
+  "instruction": "The weathers nice today perfect time to open the top drawer and put the bowl inside"
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "plus_kotoba_bridge",
+  "variant": 1,
+  "source_text": "The weathers nice today perfect time to open the top drawer and put the bowl inside",
+  "planned": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "instruction": "open the top drawer and put the bowl inside"
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "libero_plus_paraphrase",
+  "variant": 2,
+  "instruction": "Open the top drawer not the bottom one and then put the bowl inside"
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "plus_kotoba_bridge",
+  "variant": 2,
+  "source_text": "Open the top drawer not the bottom one and then put the bowl inside",
+  "planned": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "instruction": "open the top drawer and put the bowl inside"
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "ja_direct_translate",
+  "variant": 0,
+  "ja": "一番上の引き出しを開けて、ボウルをその中に入れて",
+  "instruction": "Open the top drawer and place the bowl inside."
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "ja_kotoba_bridge",
+  "variant": 0,
+  "ja": "一番上の引き出しを開けて、ボウルをその中に入れて",
+  "planned": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "instruction": "open the top drawer and put the bowl inside"
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "ja_direct_translate",
+  "variant": 1,
+  "ja": "上の引き出しにお椀しまっといて",
+  "instruction": "Place the bowl in the upper drawer."
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "ja_kotoba_bridge",
+  "variant": 1,
+  "ja": "上の引き出しにお椀しまっといて",
+  "planned": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "instruction": "open the top drawer and put the bowl inside"
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "ja_direct_translate",
+  "variant": 2,
+  "ja": "ボウルはもう使わないから、上の段の引き出しに片付けて",
+  "instruction": "Place the bowl in the upper drawer."
+ },
+ {
+  "goal_skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "condition": "ja_kotoba_bridge",
+  "variant": 2,
+  "ja": "ボウルはもう使わないから、上の段の引き出しに片付けて",
+  "planned": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "instruction": "open the top drawer and put the bowl inside"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "canonical",
+  "variant": 0,
+  "instruction": "put the bowl on the stove"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "libero_plus_paraphrase",
+  "variant": 0,
+  "instruction": "Would you mind putting the bowl on the stove The sauce needs to thicken"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "plus_kotoba_bridge",
+  "variant": 0,
+  "source_text": "Would you mind putting the bowl on the stove The sauce needs to thicken",
+  "planned": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "instruction": "put the bowl on the stove"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "libero_plus_paraphrase",
+  "variant": 1,
+  "instruction": "place the rounded vessel used for mixing ingredients onto the cooking appliance with heated surfaces"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "plus_kotoba_bridge",
+  "variant": 1,
+  "source_text": "place the rounded vessel used for mixing ingredients onto the cooking appliance with heated surfaces",
+  "planned": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "instruction": "put the bowl on the stove"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "libero_plus_paraphrase",
+  "variant": 2,
+  "instruction": "place the round deep dish used for serving food onto the appliance used for cooking"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "plus_kotoba_bridge",
+  "variant": 2,
+  "source_text": "place the round deep dish used for serving food onto the appliance used for cooking",
+  "planned": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "instruction": "put the bowl on the stove"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "ja_direct_translate",
+  "variant": 0,
+  "ja": "ボウルをコンロの上に置いて",
+  "instruction": "Place the bowl on the stove."
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "ja_kotoba_bridge",
+  "variant": 0,
+  "ja": "ボウルをコンロの上に置いて",
+  "planned": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "instruction": "put the bowl on the stove"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "ja_direct_translate",
+  "variant": 1,
+  "ja": "そのお椀、コンロにのせといて",
+  "instruction": "Place the bowl on the stove."
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "ja_kotoba_bridge",
+  "variant": 1,
+  "ja": "そのお椀、コンロにのせといて",
+  "planned": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "instruction": "put the bowl on the stove"
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "ja_direct_translate",
+  "variant": 2,
+  "ja": "スープを温めたいので、器を加熱するところに移して",
+  "instruction": "Move the container to the heating area to warm the soup."
+ },
+ {
+  "goal_skill": "put_the_bowl_on_the_stove",
+  "condition": "ja_kotoba_bridge",
+  "variant": 2,
+  "ja": "スープを温めたいので、器を加熱するところに移して",
+  "planned": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "instruction": "put the bowl on the stove"
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "canonical",
+  "variant": 0,
+  "instruction": "turn on the stove"
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "libero_plus_paraphrase",
+  "variant": 0,
+  "instruction": "Could you ensure the stove is on please"
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "plus_kotoba_bridge",
+  "variant": 0,
+  "source_text": "Could you ensure the stove is on please",
+  "planned": [
+   "turn_on_the_stove"
+  ],
+  "instruction": "turn on the stove"
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "libero_plus_paraphrase",
+  "variant": 1,
+  "instruction": "Id appreciate it if you could turn on the stove right away"
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "plus_kotoba_bridge",
+  "variant": 1,
+  "source_text": "Id appreciate it if you could turn on the stove right away",
+  "planned": [
+   "turn_on_the_stove"
+  ],
+  "instruction": "turn on the stove"
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "libero_plus_paraphrase",
+  "variant": 2,
+  "instruction": "Attention please the next task is to turn on the stove immediately"
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "plus_kotoba_bridge",
+  "variant": 2,
+  "source_text": "Attention please the next task is to turn on the stove immediately",
+  "planned": [
+   "turn_on_the_stove"
+  ],
+  "instruction": "turn on the stove"
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "ja_direct_translate",
+  "variant": 0,
+  "ja": "コンロの火をつけて",
+  "instruction": "Light the stove's flame."
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "ja_kotoba_bridge",
+  "variant": 0,
+  "ja": "コンロの火をつけて",
+  "planned": [
+   "turn_on_the_stove"
+  ],
+  "instruction": "turn on the stove"
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "ja_direct_translate",
+  "variant": 1,
+  "ja": "コンロつけといてくれる？",
+  "instruction": "Please turn on the stove."
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "ja_kotoba_bridge",
+  "variant": 1,
+  "ja": "コンロつけといてくれる？",
+  "planned": [
+   "turn_on_the_stove"
+  ],
+  "instruction": "turn on the stove"
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "ja_direct_translate",
+  "variant": 2,
+  "ja": "お湯を沸かしたいから、加熱器のスイッチを入れて",
+  "instruction": "Turn on the heater switch to boil the water."
+ },
+ {
+  "goal_skill": "turn_on_the_stove",
+  "condition": "ja_kotoba_bridge",
+  "variant": 2,
+  "ja": "お湯を沸かしたいから、加熱器のスイッチを入れて",
+  "planned": [
+   "turn_on_the_stove"
+  ],
+  "instruction": "turn on the stove"
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "canonical",
+  "variant": 0,
+  "instruction": "push the plate to the front of the stove"
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "libero_plus_paraphrase",
+  "variant": 0,
+  "instruction": "slide the dish toward the front of the cooktop"
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "plus_kotoba_bridge",
+  "variant": 0,
+  "source_text": "slide the dish toward the front of the cooktop",
+  "planned": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "instruction": "push the plate to the front of the stove"
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "libero_plus_paraphrase",
+  "variant": 1,
+  "instruction": "Could you help me push the plate to the front of the stove Im busy chopping vegetables"
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "plus_kotoba_bridge",
+  "variant": 1,
+  "source_text": "Could you help me push the plate to the front of the stove Im busy chopping vegetables",
+  "planned": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "instruction": "push the plate to the front of the stove"
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "libero_plus_paraphrase",
+  "variant": 2,
+  "instruction": "push the plate to the front of the stove"
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "plus_kotoba_bridge",
+  "variant": 2,
+  "source_text": "push the plate to the front of the stove",
+  "planned": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "instruction": "push the plate to the front of the stove"
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "ja_direct_translate",
+  "variant": 0,
+  "ja": "お皿をコンロの手前まで押して",
+  "instruction": "Push the plate forward toward the stove."
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "ja_kotoba_bridge",
+  "variant": 0,
+  "ja": "お皿をコンロの手前まで押して",
+  "planned": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "instruction": "push the plate to the front of the stove"
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "ja_direct_translate",
+  "variant": 1,
+  "ja": "皿、コンロの前に寄せといて",
+  "instruction": "Bring the plate to the front of the stove."
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "ja_kotoba_bridge",
+  "variant": 1,
+  "ja": "皿、コンロの前に寄せといて",
+  "planned": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "instruction": "push the plate to the front of the stove"
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "ja_direct_translate",
+  "variant": 2,
+  "ja": "盛り付けしやすいように、平皿をコンロの前までずらしておいて",
+  "instruction": "Move the flat plate forward to the front of the stove for easier plating."
+ },
+ {
+  "goal_skill": "push_the_plate_to_the_front_of_the_stove",
+  "condition": "ja_kotoba_bridge",
+  "variant": 2,
+  "ja": "盛り付けしやすいように、平皿をコンロの前までずらしておいて",
+  "planned": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "instruction": "push the plate to the front of the stove"
+ }
+]

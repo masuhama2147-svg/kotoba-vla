@@ -1,0 +1,7 @@
+{
+ "asr_s": 0.3,
+ "llm_s": 3.16,
+ "vla_chunk_s": 0.741,
+ "vla_requests": 41353,
+ "vla_inferences": 3544
+}

@@ -1,0 +1,220 @@
+{
+ "libero_plus_paraphrase_vs_plus_kotoba_bridge": {
+  "raw_only": 6,
+  "bridge_only": 20,
+  "both": 61,
+  "neither": 3,
+  "mcnemar_p": 0.00936,
+  "wrong_task_examples": [
+   {
+    "goal": "put_the_cream_cheese_in_the_bowl",
+    "text": "place the spreadable dairy product into the mixing vessel",
+    "init": 0,
+    "did": [
+     "put_the_bowl_on_the_plate"
+    ]
+   },
+   {
+    "goal": "put_the_cream_cheese_in_the_bowl",
+    "text": "place the spreadable dairy product into the mixing vessel",
+    "init": 1,
+    "did": [
+     "turn_on_the_stove"
+    ]
+   },
+   {
+    "goal": "put_the_cream_cheese_in_the_bowl",
+    "text": "place the spreadable dairy product into the mixing vessel",
+    "init": 2,
+    "did": [
+     "put_the_bowl_on_the_plate"
+    ]
+   },
+   {
+    "goal": "put_the_wine_bottle_on_top_of_the_cabinet",
+    "text": "Place the container holding fermented grape drink on the upper storage unit",
+    "init": 0,
+    "did": [
+     "put_the_bowl_on_top_of_the_cabinet"
+    ]
+   },
+   {
+    "goal": "put_the_wine_bottle_on_top_of_the_cabinet",
+    "text": "Place the container holding fermented grape drink on the upper storage unit",
+    "init": 1,
+    "did": [
+     "put_the_bowl_on_top_of_the_cabinet"
+    ]
+   },
+   {
+    "goal": "put_the_wine_bottle_on_top_of_the_cabinet",
+    "text": "Place the container holding fermented grape drink on the upper storage unit",
+    "init": 2,
+    "did": [
+     "put_the_bowl_on_top_of_the_cabinet"
+    ]
+   },
+   {
+    "goal": "open_the_middle_drawer_of_the_cabinet",
+    "text": "Pull out the central storage compartment in the furniture used for storing items",
+    "init": 1,
+    "did": [
+     "put_the_wine_bottle_on_the_rack"
+    ]
+   },
+   {
+    "goal": "open_the_middle_drawer_of_the_cabinet",
+    "text": "slide out the central storage compartment of the wooden structure designed for holding items",
+    "init": 0,
+    "did": [
+     "put_the_bowl_on_top_of_the_cabinet"
+    ]
+   },
+   {
+    "goal": "put_the_bowl_on_top_of_the_cabinet",
+    "text": "Place the dish above the cupboard",
+    "init": 0,
+    "did": [
+     "put_the_bowl_on_the_stove"
+    ]
+   },
+   {
+    "goal": "put_the_bowl_on_top_of_the_cabinet",
+    "text": "Place the dish above the cupboard",
+    "init": 2,
+    "did": [
+     "put_the_cream_cheese_in_the_bowl"
+    ]
+   },
+   {
+    "goal": "put_the_bowl_on_top_of_the_cabinet",
+    "text": "position the dish on the surface of the cupboard",
+    "init": 0,
+    "did": [
+     "put_the_bowl_on_the_stove"
+    ]
+   },
+   {
+    "goal": "open_the_top_drawer_and_put_the_bowl_inside",
+    "text": "Could you place the bowl in the top drawer for me please",
+    "init": 0,
+    "did": [
+     "put_the_bowl_on_top_of_the_cabinet"
+    ]
+   },
+   {
+    "goal": "put_the_bowl_on_the_stove",
+    "text": "place the rounded vessel used for mixing ingredients onto the cooking appliance with heated surfaces",
+    "init": 0,
+    "did": [
+     "put_the_bowl_on_top_of_the_cabinet"
+    ]
+   },
+   {
+    "goal": "put_the_bowl_on_the_stove",
+    "text": "place the rounded vessel used for mixing ingredients onto the cooking appliance with heated surfaces",
+    "init": 1,
+    "did": [
+     "turn_on_the_stove"
+    ]
+   },
+   {
+    "goal": "put_the_bowl_on_the_stove",
+    "text": "place the rounded vessel used for mixing ingredients onto the cooking appliance with heated surfaces",
+    "init": 2,
+    "did": [
+     "put_the_cream_cheese_in_the_bowl"
+    ]
+   },
+   {
+    "goal": "put_the_bowl_on_the_stove",
+    "text": "place the round deep dish used for serving food onto the appliance used for cooking",
+    "init": 1,
+    "did": [
+     "turn_on_the_stove"
+    ]
+   },
+   {
+    "goal": "push_the_plate_to_the_front_of_the_stove",
+    "text": "slide the dish toward the front of the cooktop",
+    "init": 0,
+    "did": [
+     "put_the_bowl_on_top_of_the_cabinet"
+    ]
+   },
+   {
+    "goal": "push_the_plate_to_the_front_of_the_stove",
+    "text": "slide the dish toward the front of the cooktop",
+    "init": 1,
+    "did": [
+     "turn_on_the_stove"
+    ]
+   },
+   {
+    "goal": "push_the_plate_to_the_front_of_the_stove",
+    "text": "slide the dish toward the front of the cooktop",
+    "init": 2,
+    "did": [
+     "turn_on_the_stove"
+    ]
+   }
+  ]
+ },
+ "ja_direct_translate_vs_ja_kotoba_bridge": {
+  "raw_only": 6,
+  "bridge_only": 9,
+  "both": 75,
+  "neither": 0,
+  "mcnemar_p": 0.60724,
+  "wrong_task_examples": [
+   {
+    "goal": "put_the_bowl_on_the_plate",
+    "text": "Place the dishes on top of the serving tray.",
+    "init": 0,
+    "did": [
+     "put_the_bowl_on_top_of_the_cabinet"
+    ]
+   },
+   {
+    "goal": "put_the_bowl_on_the_plate",
+    "text": "Place the dishes on top of the serving tray.",
+    "init": 1,
+    "did": [
+     "put_the_bowl_on_top_of_the_cabinet"
+    ]
+   },
+   {
+    "goal": "put_the_bowl_on_the_plate",
+    "text": "Place the dishes on top of the serving tray.",
+    "init": 2,
+    "did": [
+     "put_the_bowl_on_top_of_the_cabinet"
+    ]
+   },
+   {
+    "goal": "put_the_wine_bottle_on_the_rack",
+    "text": "Place the wine bottles on the storage shelf in an upright position.",
+    "init": 0,
+    "did": [
+     "put_the_wine_bottle_on_top_of_the_cabinet"
+    ]
+   },
+   {
+    "goal": "open_the_top_drawer_and_put_the_bowl_inside",
+    "text": "Place the bowl in the upper drawer.",
+    "init": 1,
+    "did": [
+     "put_the_bowl_on_top_of_the_cabinet"
+    ]
+   },
+   {
+    "goal": "open_the_top_drawer_and_put_the_bowl_inside",
+    "text": "Place the bowl in the upper drawer.",
+    "init": 1,
+    "did": [
+     "put_the_bowl_on_top_of_the_cabinet"
+    ]
+   }
+  ]
+ }
+}

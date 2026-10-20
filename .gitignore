@@ -14,3 +14,7 @@ weights/
 
 # 実行結果（動画・中間生成物）。評価の集計 JSON は results/ に固定して残す
 outputs/
+
+# レポートの中間生成物（PDF は残す）
+report/report.html
+report/figures/

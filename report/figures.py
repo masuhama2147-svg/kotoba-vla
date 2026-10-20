@@ -71,8 +71,8 @@ def vla_figure(summary: dict, out: Path) -> None:
                     va="center", fontsize=8.5, color=INK)
     canon = summary["canonical"]
     ax.axvline(canon["success_rate"], color=INK2, linestyle=(0, (4, 3)), linewidth=1.0)
-    ax.text(canon["success_rate"] + 0.01, len(groups) - 0.5, f"学習時の正準文\n{canon['success_rate'] * 100:.0f}%",
-            ha="left", va="bottom", fontsize=7.5, color=INK2)
+    ax.text(canon["success_rate"] - 0.01, -0.6, f"学習時の正準文 {canon['success_rate'] * 100:.0f}%",
+            ha="right", va="center", fontsize=7.5, color=INK2)
     ax.set_yticks(range(len(groups)), [g[0] for g in groups], fontsize=9, color=INK)
     ax.set_ylim(len(groups) - 0.45, -0.7)
     ax.set_xlim(0, 1.18)

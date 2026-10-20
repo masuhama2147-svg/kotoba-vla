@@ -1,0 +1,14 @@
+{
+ "full": {
+  "n": 18,
+  "chain_success": 14,
+  "skill_success": 32,
+  "skills_total": 39
+ },
+ "naive": {
+  "n": 18,
+  "chain_success": 3,
+  "skill_success": 19,
+  "skills_total": 39
+ }
+}

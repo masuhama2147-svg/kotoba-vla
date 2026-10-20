@@ -42,8 +42,8 @@ h1 { font-size: 19pt; margin: 0 0 2mm; line-height: 1.3; }
 .sub { color: #52514e; font-size: 10.5pt; margin-bottom: 4mm; }
 .meta { font-size: 9pt; color: #52514e; border-top: 1px solid #d8d7d2; border-bottom: 1px solid #d8d7d2;
         padding: 2mm 0; margin-bottom: 5mm; }
-h2 { font-size: 13pt; margin: 6mm 0 2mm; padding-bottom: 1mm; border-bottom: 2px solid #2a78d6; }
-h3 { font-size: 10.5pt; margin: 4mm 0 1mm; }
+h2 { page-break-after: avoid; font-size: 13pt; margin: 6mm 0 2mm; padding-bottom: 1mm; border-bottom: 2px solid #2a78d6; }
+h3 { page-break-after: avoid; font-size: 10.5pt; margin: 4mm 0 1mm; }
 p { margin: 1.2mm 0 2mm; }
 table { border-collapse: collapse; width: 100%; margin: 2mm 0 3mm; font-size: 9pt; }
 th, td { border-bottom: 1px solid #e4e3df; padding: 1.4mm 2mm; text-align: left; vertical-align: top; }
@@ -64,6 +64,13 @@ ul { margin: 1mm 0 2mm; padding-left: 5mm; }
 li { margin: 0.6mm 0; }
 .small { font-size: 8.5pt; color: #52514e; }
 .pb { page-break-before: always; }
+.flow { display: flex; align-items: stretch; gap: 1.5mm; margin: 2mm 0 3mm; page-break-inside: avoid; }
+.flow div { flex: 1; border: 1px solid #c9c8c2; border-radius: 2mm; padding: 2mm; text-align: center; background: #faf9f6; }
+.flow div.hl { border-color: #2a78d6; background: #f3f6fb; }
+.flow b { display: block; font-size: 9.5pt; }
+.flow span { font-size: 8pt; color: #52514e; }
+.flow i { align-self: center; font-style: normal; color: #52514e; }
+figure, table, .kpis { page-break-inside: avoid; }
 """
 
 
@@ -72,6 +79,7 @@ def build(args) -> str:
     p_dev = load("planner_summary_dev.json")
     p_ho = load("planner_summary_holdout.json")
     chain = load("chain_summary.json")
+    paired = load("vla_paired.json")
     repro = load("t1_reproduction.json")
     timing = load("timing.json")
     notes = json.loads((ROOT / "report" / "notes.json").read_text())
@@ -108,11 +116,13 @@ def build(args) -> str:
 <p>日本語の音声で頼んだ作業を、シミュレータ LIBERO（robosuite / MuJoCo）上のロボットアームが VLA（視覚言語行動モデル）π0.5 で実行するシステムを作った。
 VLA は学習時に見た言い回しから外れると急に失敗するため、依頼を <b>VLA が学習時に見た文（正準文）へ翻訳する「言語ブリッジ」</b>を間に挟んだ。
 言語ブリッジは音声認識（Whisper）・多言語埋め込み検索・LLM（Qwen3-8B）で構成し、すべて Mac 上でローカルに動く。
-複数の作業をまとめた依頼は、LLM がスキルの列に分解し、1 つずつ実行してゴール達成を確かめる。</p>
+複数の作業をまとめた依頼は、LLM がスキルの列に分解し、1 つずつ実行してゴール達成を確かめる。
+スキル選択は調整に使っていない依頼文でも文字入力で {pct(p_ho['text']['llm_single_acc'])}・音声入力で {pct(p_ho['asr']['llm_single_acc'])} 正しく、
+VLA に渡す言葉をそろえることで、遠回しな依頼で起きていた「別の作業をしてしまう」失敗がなくなった。</p>
 <div class="kpis">
- <div class="kpi"><b>{pct(ja_raw['success_rate'])} → {pct(ja_br['success_rate'])}</b><span>日本語の依頼での VLA 成功率<br>（英訳しただけ → Kotoba-VLA、各 {ja_br['n']} 試行）</span></div>
- <div class="kpi"><b>{pct(p_ho['text']['llm_single_acc'])}</b><span>未使用の依頼文でのスキル選択の正解率<br>（文字入力、{p_ho['text']['n_single']} 件。音声入力 {pct(p_ho['asr']['llm_single_acc'])}）</span></div>
- <div class="kpi"><b>{f['chain_success']}/{f['n']}</b><span>複数ステップ依頼の完遂<br>（姿勢復帰＋再試行なしでは {n['chain_success']}/{n['n']}）</span></div>
+ <div class="kpi"><b>{pct(vla['libero_plus_paraphrase']['success_rate'])} → {pct(vla['plus_kotoba_bridge']['success_rate'])}</b><span>遠回しな英語の依頼での VLA 成功率<br>（そのまま → Kotoba-VLA、各 {vla['plus_kotoba_bridge']['n']} 試行、p={paired['libero_plus_paraphrase_vs_plus_kotoba_bridge']['mcnemar_p']:.3f}）</span></div>
+ <div class="kpi"><b>{vla['libero_plus_paraphrase']['fail_did_other_task'] + vla['ja_direct_translate']['fail_did_other_task']} → {vla['plus_kotoba_bridge']['fail_did_other_task'] + vla['ja_kotoba_bridge']['fail_did_other_task']} 件</b><span>頼んでいない別の作業をしてしまった失敗<br>（英語の言い換え＋日本語の英訳、計 180 試行）</span></div>
+ <div class="kpi"><b>{n['chain_success']} → {f['chain_success']} / {f['n']}</b><span>複数ステップ依頼の完遂<br>（そのまま連続実行 → 姿勢復帰＋再試行）</span></div>
 </div>
 """)
     sections.append(f"""
@@ -126,15 +136,19 @@ VLA は学習時に見た言い回しから外れると急に失敗するため�
 </table>
 <p>人が実際にロボットへ頼むときの言葉は、日本語で、遠回しで、複数の作業を含む。これを学習済みの VLA にそのまま（あるいは機械的に英訳して）渡すと性能が落ちるはずである。
 実際、本課題で日本語の依頼を LLM で英訳したところ、学習時の文と一致したものは <b>{p_dev['text']['n_single']} 文中 {round(p_dev['text']['direct_in_distribution'] * p_dev['text']['n_single'])} 文</b>だった。
+（後で示すとおり、素直な依頼なら π0.5 は英訳でも多くをこなすが、依頼が遠回しになると別の作業をしてしまう。）
 そこで本課題の目的を「VLA を再学習せずに、人の言葉を VLA に通じる言葉へ変換し、複数の作業を安全にやり切らせる」とした。</p>
 """)
     sections.append(f"""
 <h2>3. システム</h2>
-<pre>日本語の声 → 音声認識 → スキル検索 → LLM 計画 → VLA 実行 → 検証 ─┐
-             Whisper     言い換え     Qwen3-8B     π0.5＋LoRA   BDDL ゴール │
-                         2,052 文     ID だけ選ぶ   (PARC T1)    ＋1mm 接触  │
-                                                      ↑                     │
-                                                      └─ 失敗: 姿勢を戻して再試行</pre>
+<div class="flow">
+ <div><b>音声認識</b><span>Whisper</span></div><i>→</i>
+ <div><b>スキル検索</b><span>言い換え 2,052 文</span></div><i>→</i>
+ <div><b>LLM 計画</b><span>Qwen3-8B・ID だけ選ぶ</span></div><i>→</i>
+ <div class="hl"><b>VLA 実行</b><span>π0.5＋自作 LoRA</span></div><i>→</i>
+ <div><b>検証</b><span>BDDL＋1mm 接触</span></div>
+</div>
+<div class="small" style="text-align:right;margin-top:-1mm">失敗したら初期姿勢へ戻して 1 回だけ再試行</div>
 <h3>3.1 言語ブリッジ（音声認識・検索・LLM 計画）</h3>
 <ul>
 <li><b>音声認識</b>：Whisper large-v3-turbo（mlx-whisper）。平均 {timing['asr_s']:.1f} 秒。</li>
@@ -158,7 +172,7 @@ VLA は初期姿勢から学習しているため、次のスキルの前にア�
 そこで AI・VLA・シミュレータの 3 プロセスに分け、観測と行動を msgpack で HTTP 越しに受け渡した。ROS 2 でノードを分けるのと同じ考え方である。</p>
 """)
     sections.append(f"""
-<h2 class="pb">4. 実験</h2>
+<h2>4. 実験</h2>
 <h3>4.1 言語ブリッジの正解率</h3>
 <p>LIBERO-Goal の 10 スキルについて、日本語の依頼文を開発セット（1 スキル 3 通り＋複数ステップ 6 件＋実行不可 3 件）と、
 プロンプト調整の後に新しく書いた未使用セット（1 スキル 2 通り＋複数ステップ 4 件＋実行不可 2 件）に分けた（PARC で学んだ「選抜と確証は別のセットで」）。

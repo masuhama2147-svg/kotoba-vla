@@ -143,7 +143,11 @@ class DemoRenderer:
             c.text((x, y + 84), f"ステップ {rec.get('t', 0) + 1} / 300   試行 {rec.get('attempt', 1)}", size=23, color=TEXT)
         goal_ok = bool(rec.get("goal"))
         c.text((x, y + 128), "ゴール判定（BDDL）", size=20, color=MUTED)
-        c.text((x, y + 156), goal_text(list(skill.goal)), size=22, color=OK if goal_ok else TEXT)
+        gt = goal_text(list(skill.goal))
+        size = 22
+        while size > 14 and c.d.textlength(gt, font=font(size)) > RX + RW - 24 - x:
+            size -= 1
+        c.text((x, y + 156), gt, size=size, color=OK if goal_ok else TEXT)
         d = float(rec.get("disturb_mm", 0.0))
         c.text((x, y + 196), f"対象外の物体の変位  {d:.1f} mm  （基準 1mm）", size=22, color=OK if d <= 1.0 else NG)
 
@@ -245,7 +249,7 @@ class DemoRenderer:
             audio.append((done, w.t + 0.2))
         last = self.main[len(self.main) - 1]
         for k in range(int(3.0 * FPS)):
-            c = self.base(last, 4)
+            c = self.base(last, 4 if self.steps else 2)
             self.asr_box(c, 1.0, listening=False)
             self.plan_box(c, "final", 1.0, self._statuses(len(frames) - 1, frames[-1]) if self.steps else None)
             self.vla_box(c, len(self.wrist) - 1, None)

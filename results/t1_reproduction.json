@@ -1,0 +1,10 @@
+{
+ "base": "lerobot/pi05_libero_finetuned_v044",
+ "base_sha256": "877b3ec1130548b69af7f8aeef3ec9d3fc7738040f0b9beb490857ec970997ae",
+ "adapter": "adapters/lp_ft_007500",
+ "adapter_sha256": "028a0c31dd54037cd42178166ceaa215bf2ce4ff599fc73cf2ea066c524c4897",
+ "scale": 0.1,
+ "merged_sha256": "126d63db21429a1ce35293779cc9342ed819ffe87271008ee94b9277aa45368d",
+ "expected_sha256": "126d63db21429a1ce35293779cc9342ed819ffe87271008ee94b9277aa45368d",
+ "match": true
+}

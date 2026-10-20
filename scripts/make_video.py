@@ -47,7 +47,6 @@ NARRATION = {
     ],
     "contrast": ["同じ依頼でも、VLA に渡す言葉で、結果が変わります。",
                  "左は英訳しただけの文、右はコトバ ブイエルエーが選んだ、学習時の文です。"],
-    "refusal": ["スキルで実現できない依頼は、近いスキルに無理やり丸めず、できないと答えます。"],
     "closing": ["パークで得た知見と資産を、日本語で頼めるロボットとしてまとめました。", "ご覧いただき、ありがとうございました。"],
 }
 LEAD = 0.4  # render_card がナレーションを置く開始秒
@@ -58,7 +57,11 @@ def results_card_factory(vla: dict, planner: dict, chain: dict):
 
     def item(key, name, color):
         v = vla[key]
-        return (name, v["success_rate"], f"{v['success_rate'] * 100:.0f}%（{v['success']}/{v['n']}）", color)
+        label = f"{v['success_rate'] * 100:.0f}%（{v['success']}/{v['n']}）"
+        fails = v["n"] - v["success"]
+        if fails:
+            label += f"  失敗 {fails} 件中 {v.get('fail_did_other_task', 0)} 件は別の作業"
+        return (name, v["success_rate"], label, color)
 
     groups = [
         ("英語の言い換え", [item("libero_plus_paraphrase", "そのまま", O), item("plus_kotoba_bridge", "Kotoba", B)]),
@@ -74,18 +77,18 @@ def results_card_factory(vla: dict, planner: dict, chain: dict):
     def draw(c: Canvas, t: float) -> None:
         c.text((80, 56), "結果 ― LIBERO-Goal（10 スキル）で測定", size=44, bold=True)
         cards.legend(c, (1080, 66), [("そのまま渡す（日本語は英訳のみ）", O), ("Kotoba-VLA を通す", B)], t, 0.2)
-        cards.grouped_bars(c, (80, 140, 1840, 620), "VLA（π0.5）の成功率 ― 渡す言葉だけを変える", groups, t, 0.3,
+        cards.grouped_bars(c, (80, 140, 1840, 560), "VLA（π0.5）の成功率 ― 渡す言葉だけを変える", groups, t, 0.3,
                            reference=(f"学習時の正準文 {canon * 100:.0f}%", canon),
-                           note="同じスキル・同じ初期状態・同じ乱数。細かい数字はレポートを参照")
-        cards.grouped_bars(c, (80, 650, 1100, 1010), "複数ステップ依頼の完遂", chain_groups, t, 2.5,
+                           note="同じスキル・同じ初期状態（3 通り）・同じ乱数で、渡す文だけを変えた", label_space=640)
+        cards.grouped_bars(c, (80, 590, 1100, 1010), "複数ステップ依頼の完遂", chain_groups, t, 2.5,
                            note="姿勢を戻す＋失敗時に再試行（Kotoba）と、そのまま連続実行の比較")
         a = cards.fade(t, 4.0)
         if a > 0 and ho:
-            c.panel((1140, 650, 1840, 1010))
-            c.text((1170, 672), "スキル選択の正解率（未使用の依頼文）", size=28, bold=True)
-            c.text((1170, 740), f"{ho['text']['llm_single_acc'] * 100:.0f}%", size=96, bold=True, color=B)
-            c.text((1490, 770), f"文字入力 {ho['text']['n_single']} 件", size=24, color=cards.MUTED)
-            c.text((1170, 880), f"音声入力でも {ho['asr']['llm_single_acc'] * 100:.0f}%。実行できない依頼は"
+            c.panel((1140, 590, 1840, 1010))
+            c.text((1170, 612), "スキル選択の正解率（未使用の依頼文）", size=28, bold=True)
+            c.text((1170, 690), f"{ho['text']['llm_single_acc'] * 100:.0f}%", size=96, bold=True, color=B)
+            c.text((1490, 720), f"文字入力 {ho['text']['n_single']} 件", size=24, color=cards.MUTED)
+            c.text((1170, 840), f"音声入力でも {ho['asr']['llm_single_acc'] * 100:.0f}%。実行できない依頼は"
                                 f" {ho['text']['llm_refusal'] * 100:.0f}% 断れた", size=24, color=cards.TEXT)
     return draw
 
@@ -144,8 +147,15 @@ def main() -> None:
                      captions=caps).render(seg_dir / "04_demo1.mp4")
     if want("contrast") and args.contrast_left.exists():
         req = json.loads((args.contrast_right / "plan.json").read_text())["transcript"]
+        choice = json.loads((args.contrast_left / "result.json").read_text()).get("choice", {})
+        cap = ""
+        if choice.get("other_goals"):
+            from kotoba_vla.video.labels import SKILL_JA
+
+            did = SKILL_JA.get(choice["other_goals"][0], choice["other_goals"][0])
+            cap = f"英訳した文では、頼んでいない「{did}」をしてしまった"
         ContrastRenderer(args.contrast_left, args.contrast_right, req, "デモ2 ｜ 渡す言葉で結果が変わる",
-                         speed=args.speed).render(seg_dir / "05_contrast.mp4", nar_dir / "contrast.wav")
+                         speed=args.speed).render(seg_dir / "05_contrast.mp4", nar_dir / "contrast.wav", caption=cap)
     if want("refusal") and args.refusal.exists():
         DemoRenderer(args.refusal, "デモ3 ｜ できない依頼は断る", catalog, speed=args.speed,
                      captions=[{"phase": "done", "text": "スキルに無い作業は、近いスキルへ丸めずに断る"}]
@@ -167,21 +177,21 @@ def main() -> None:
     print(f"{args.out}  {total:.1f} 秒  ({len(segs)} 区間)")
 
 
-def results_narration(vla: dict, planner: dict, chain: dict) -> str:
+def results_narration(vla: dict, planner: dict, chain: dict) -> list[str]:
     def pct(k):
-        return round(vla[k]["success_rate"] * 100) if k in vla else None
+        return round(vla[k]["success_rate"] * 100)
 
-    parts = ["リベロ ゴールの10タスクで、VLA に渡す言葉だけを変えて比べました。"]  # 文ごとに合成する
-    if pct("canonical") is not None and pct("ja_direct_translate") is not None:
-        parts.append(f"学習時の文では{pct('canonical')}パーセント成功しますが、日本語を英訳しただけでは"
-                     f"{pct('ja_direct_translate')}パーセントに下がります。")
-    if pct("ja_kotoba_bridge") is not None:
-        parts.append(f"コトバ ブイエルエーを通すと{pct('ja_kotoba_bridge')}パーセントまで戻りました。")
-    if "full" in chain and "naive" in chain:
-        f, n = chain["full"], chain["naive"]
-        parts.append(f"複数の作業をまとめた依頼は、姿勢を戻して再試行することで、{n['chain_success']}件から"
-                     f"{f['chain_success']}件の完遂に増えました。")
-    return parts
+    f, n = chain["full"], chain["naive"]
+    return [
+        "リベロ ゴールの10タスクで、VLA に渡す言葉だけを変えて比べました。",
+        f"英語の遠回しな言い換えをそのまま渡すと、成功率は{pct('libero_plus_paraphrase')}パーセントに下がり、"
+        "失敗の多くは、頼んでいない別の作業でした。",
+        f"コトバ ブイエルエーを通すと{pct('plus_kotoba_bridge')}パーセントに戻り、別の作業をしてしまう失敗は、ゼロになりました。",
+        f"日本語の依頼は、英訳だけでも{pct('ja_direct_translate')}パーセントと健闘しましたが、遠回しな依頼では別の作業をしてしまい、"
+        f"コトバを通すと{pct('ja_kotoba_bridge')}パーセントでした。",
+        f"複数の作業をまとめた依頼は、姿勢を戻して再試行することで、{n['n']}件中{n['chain_success']}件から"
+        f"{f['chain_success']}件の完遂に増えました。",
+    ]
 
 
 if __name__ == "__main__":
