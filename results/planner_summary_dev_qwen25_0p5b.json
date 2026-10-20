@@ -1,0 +1,15 @@
+{
+ "text": {
+  "n_single": 30,
+  "retrieval_canon_acc": 0.8,
+  "retrieval_para_acc": 0.8,
+  "llm_single_acc": 0.23333333333333334,
+  "direct_in_distribution": 0.0,
+  "direct_exact_correct": 0.0,
+  "n_multi": 6,
+  "llm_multi_exact": 0.0,
+  "n_unsupported": 3,
+  "llm_refusal": 0.0,
+  "llm_latency_mean_s": 2.04
+ }
+}

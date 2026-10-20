@@ -39,6 +39,7 @@ def main() -> None:
     ap.add_argument("--no-asr", action="store_true")
     ap.add_argument("--commands", type=Path, default=ROOT / "data" / "eval_commands_ja.json")
     ap.add_argument("--tag", default="dev", help="出力ファイル名の接尾辞（dev / holdout）")
+    ap.add_argument("--llm", default="mlx-community/Qwen3-8B-4bit", help="計画に使う LLM（比較用に差し替え可）")
     args = ap.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
 
@@ -47,7 +48,7 @@ def main() -> None:
     goal_ids = [s.id for s in catalog.in_scene(SCENE)]
     r_para = SkillRetriever(catalog, use_paraphrases=True)
     r_canon = SkillRetriever(catalog, use_paraphrases=False)
-    llm = LocalLLM()
+    llm = LocalLLM(args.llm)
     planner = SkillPlanner(catalog, r_para, llm)
 
     # 入力（文字のまま / 音声認識を通したもの）

@@ -34,7 +34,25 @@ def footer(c: Canvas, text: str) -> None:
 
 
 # ---------------------------------------------------------------------------- 各スライド
+_BG_CACHE: dict = {}
+
+
+def scene_background(c: Canvas, path: Path, darkness: float = 0.72) -> None:
+    """シミュレータの静止画を暗くして背景に敷く（文字を読みやすくするため）。"""
+    if path not in _BG_CACHE:
+        from PIL import Image
+
+        im = Image.open(path).convert("RGB").resize((W, H))
+        _BG_CACHE[path] = Image.blend(im, Image.new("RGB", (W, H), BG), darkness)
+    c.img.paste(_BG_CACHE[path], (0, 0))
+
+
+TITLE_BG = Path(__file__).resolve().parents[2] / "outputs" / "video_assets" / "title_bg.png"
+
+
 def title_card(c: Canvas, t: float) -> None:
+    if TITLE_BG.exists():
+        scene_background(c, TITLE_BG)
     a = fade(t, 0.2, 0.8)
     c.text((W // 2, 330), "Kotoba-VLA", size=120, bold=True, color=_blend(TEXT, a), anchor="ma")
     c.text((W // 2, 500), "日本語の声で、VLA ロボットに頼む", size=56, bold=True, color=_blend(ACCENT, fade(t, 0.8)), anchor="ma")
@@ -135,6 +153,8 @@ def bar_chart(c: Canvas, box, title: str, items: list[tuple[str, float, tuple]],
 
 
 def closing_card(c: Canvas, t: float) -> None:
+    if TITLE_BG.exists():
+        scene_background(c, TITLE_BG, darkness=0.86)
     c.text((80, 70), "まとめ", size=50, bold=True)
     pts = [
         ("言い回しの壁を、LLM の通訳で越えた", "日本語・遠回しな英語の依頼を、VLA が学習時に見た正準文へ変換して成功率を回復"),

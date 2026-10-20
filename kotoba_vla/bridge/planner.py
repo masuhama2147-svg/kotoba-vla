@@ -88,9 +88,12 @@ class LocalLLM:
         from mlx_lm import generate
 
         messages = [{"role": "system", "content": system}, {"role": "user", "content": user}]
-        prompt = self.tokenizer.apply_chat_template(
-            messages, add_generation_prompt=True, tokenize=False, enable_thinking=False
-        )
+        try:
+            prompt = self.tokenizer.apply_chat_template(
+                messages, add_generation_prompt=True, tokenize=False, enable_thinking=False
+            )
+        except TypeError:  # 思考モードの切り替えを持たないモデル
+            prompt = self.tokenizer.apply_chat_template(messages, add_generation_prompt=True, tokenize=False)
         return generate(self.model, self.tokenizer, prompt=prompt, max_tokens=max_tokens, verbose=False)
 
 

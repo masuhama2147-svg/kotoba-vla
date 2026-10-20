@@ -1,0 +1,5 @@
+{
+ "n_queries": 515,
+ "top1_canonical_only": 0.948,
+ "top1_with_paraphrases_loo": 0.975
+}

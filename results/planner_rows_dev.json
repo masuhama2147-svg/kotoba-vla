@@ -1,0 +1,1410 @@
+[
+ {
+  "kind": "single",
+  "text": "棚の真ん中の引き出しを開けて",
+  "expect": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "source": "text",
+  "query": "棚の真ん中の引き出しを開けて",
+  "skill": "open_the_middle_drawer_of_the_cabinet",
+  "variant": 0,
+  "retrieval_canon": "open_the_middle_drawer_of_the_cabinet",
+  "retrieval_para": "open_the_middle_drawer_of_the_cabinet",
+  "llm_planner": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.88,
+  "direct_translate": "Open the middle drawer on the shelf."
+ },
+ {
+  "kind": "single",
+  "text": "棚の真ん中の引き出しを開けて",
+  "expect": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "source": "asr",
+  "query": "棚の真ん中の引き出しを開けて",
+  "skill": "open_the_middle_drawer_of_the_cabinet",
+  "variant": 0,
+  "retrieval_canon": "open_the_middle_drawer_of_the_cabinet",
+  "retrieval_para": "open_the_middle_drawer_of_the_cabinet",
+  "llm_planner": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.43,
+  "direct_translate": "Open the middle drawer on the shelf."
+ },
+ {
+  "kind": "single",
+  "text": "まんなかの引き出し、開けといてくれる？",
+  "expect": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "source": "text",
+  "query": "まんなかの引き出し、開けといてくれる？",
+  "skill": "open_the_middle_drawer_of_the_cabinet",
+  "variant": 1,
+  "retrieval_canon": "open_the_middle_drawer_of_the_cabinet",
+  "retrieval_para": "open_the_middle_drawer_of_the_cabinet",
+  "llm_planner": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.26,
+  "direct_translate": "Open the middle drawer."
+ },
+ {
+  "kind": "single",
+  "text": "まんなかの引き出し、開けといてくれる？",
+  "expect": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "source": "asr",
+  "query": "真ん中の引き出し、開けといてくれる?",
+  "skill": "open_the_middle_drawer_of_the_cabinet",
+  "variant": 1,
+  "retrieval_canon": "open_the_middle_drawer_of_the_cabinet",
+  "retrieval_para": "open_the_middle_drawer_of_the_cabinet",
+  "llm_planner": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.31,
+  "direct_translate": "Open the middle drawer."
+ },
+ {
+  "kind": "single",
+  "text": "キャビネットの中段に物をしまいたいから、そこを開けておいて",
+  "expect": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "source": "text",
+  "query": "キャビネットの中段に物をしまいたいから、そこを開けておいて",
+  "skill": "open_the_middle_drawer_of_the_cabinet",
+  "variant": 2,
+  "retrieval_canon": "open_the_middle_drawer_of_the_cabinet",
+  "retrieval_para": "open_the_middle_drawer_of_the_cabinet",
+  "llm_planner": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.17,
+  "direct_translate": "Open the middle section of the cabinet."
+ },
+ {
+  "kind": "single",
+  "text": "キャビネットの中段に物をしまいたいから、そこを開けておいて",
+  "expect": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "source": "asr",
+  "query": "キャビネットの中段に物をしまいたいからそこを開けておいて",
+  "skill": "open_the_middle_drawer_of_the_cabinet",
+  "variant": 2,
+  "retrieval_canon": "open_the_middle_drawer_of_the_cabinet",
+  "retrieval_para": "open_the_middle_drawer_of_the_cabinet",
+  "llm_planner": [
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.27,
+  "direct_translate": "Open the middle section of the cabinet."
+ },
+ {
+  "kind": "single",
+  "text": "ボウルをコンロの上に置いて",
+  "expect": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "source": "text",
+  "query": "ボウルをコンロの上に置いて",
+  "skill": "put_the_bowl_on_the_stove",
+  "variant": 0,
+  "retrieval_canon": "put_the_bowl_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_bowl_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.7,
+  "direct_translate": "Place the bowl on the stove."
+ },
+ {
+  "kind": "single",
+  "text": "ボウルをコンロの上に置いて",
+  "expect": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "source": "asr",
+  "query": "ボールをコンロの上に置いて、",
+  "skill": "put_the_bowl_on_the_stove",
+  "variant": 0,
+  "retrieval_canon": "put_the_bowl_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_bowl_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.44,
+  "direct_translate": "Place the ball on top of the stove."
+ },
+ {
+  "kind": "single",
+  "text": "そのお椀、コンロにのせといて",
+  "expect": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "source": "text",
+  "query": "そのお椀、コンロにのせといて",
+  "skill": "put_the_bowl_on_the_stove",
+  "variant": 1,
+  "retrieval_canon": "put_the_bowl_on_the_stove",
+  "retrieval_para": "put_the_bowl_on_the_stove",
+  "llm_planner": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.36,
+  "direct_translate": "Place the bowl on the stove."
+ },
+ {
+  "kind": "single",
+  "text": "そのお椀、コンロにのせといて",
+  "expect": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "source": "asr",
+  "query": "そのお椀、コンロに乗せといて。",
+  "skill": "put_the_bowl_on_the_stove",
+  "variant": 1,
+  "retrieval_canon": "put_the_bowl_on_the_stove",
+  "retrieval_para": "put_the_bowl_on_the_stove",
+  "llm_planner": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.59,
+  "direct_translate": "Place the bowl on the stove."
+ },
+ {
+  "kind": "single",
+  "text": "スープを温めたいので、器を加熱するところに移して",
+  "expect": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "source": "text",
+  "query": "スープを温めたいので、器を加熱するところに移して",
+  "skill": "put_the_bowl_on_the_stove",
+  "variant": 2,
+  "retrieval_canon": "turn_on_the_stove",
+  "retrieval_para": "turn_on_the_stove",
+  "llm_planner": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.55,
+  "direct_translate": "Move the container to the heating area to warm the soup."
+ },
+ {
+  "kind": "single",
+  "text": "スープを温めたいので、器を加熱するところに移して",
+  "expect": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "source": "asr",
+  "query": "スープを温めたいので、器を加熱するところに移して、",
+  "skill": "put_the_bowl_on_the_stove",
+  "variant": 2,
+  "retrieval_canon": "turn_on_the_stove",
+  "retrieval_para": "turn_on_the_stove",
+  "llm_planner": [
+   "put_the_bowl_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.55,
+  "direct_translate": "Place the container in the heating area."
+ },
+ {
+  "kind": "single",
+  "text": "ワインボトルを棚の上に置いて",
+  "expect": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "source": "text",
+  "query": "ワインボトルを棚の上に置いて",
+  "skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "variant": 0,
+  "retrieval_canon": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.47,
+  "direct_translate": "Place the wine bottle on top of the shelf."
+ },
+ {
+  "kind": "single",
+  "text": "ワインボトルを棚の上に置いて",
+  "expect": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "source": "asr",
+  "query": "ワインボトルを棚の上に置いて、",
+  "skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "variant": 0,
+  "retrieval_canon": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.55,
+  "direct_translate": "Place the wine bottle on top of the shelf."
+ },
+ {
+  "kind": "single",
+  "text": "ワイン、キャビネットの上にのせておいてくれる？",
+  "expect": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "source": "text",
+  "query": "ワイン、キャビネットの上にのせておいてくれる？",
+  "skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "variant": 1,
+  "retrieval_canon": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.61,
+  "direct_translate": "Place the wine on top of the cabinet."
+ },
+ {
+  "kind": "single",
+  "text": "ワイン、キャビネットの上にのせておいてくれる？",
+  "expect": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "source": "asr",
+  "query": "ワイン、キャビネットの上に乗せておいてくれる?",
+  "skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "variant": 1,
+  "retrieval_canon": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.65,
+  "direct_translate": "Place the wine on top of the cabinet."
+ },
+ {
+  "kind": "single",
+  "text": "ワインは子どもの手が届かない高いところ、棚のてっぺんに上げておいて",
+  "expect": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "source": "text",
+  "query": "ワインは子どもの手が届かない高いところ、棚のてっぺんに上げておいて",
+  "skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "variant": 2,
+  "retrieval_canon": "put_the_wine_bottle_on_the_rack",
+  "retrieval_para": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.65,
+  "direct_translate": "Place the wine on the top shelf of the cabinet where it is out of reach of children."
+ },
+ {
+  "kind": "single",
+  "text": "ワインは子どもの手が届かない高いところ、棚のてっぺんに上げておいて",
+  "expect": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "source": "asr",
+  "query": "ワインは子供の手が届かない高いところ、棚のてっぺんにあげておいて、",
+  "skill": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "variant": 2,
+  "retrieval_canon": "put_the_wine_bottle_on_the_rack",
+  "retrieval_para": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_wine_bottle_on_top_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.78,
+  "direct_translate": "Place the wine on the top shelf of the cabinet where it is out of reach for children."
+ },
+ {
+  "kind": "single",
+  "text": "一番上の引き出しを開けて、ボウルをその中に入れて",
+  "expect": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "source": "text",
+  "query": "一番上の引き出しを開けて、ボウルをその中に入れて",
+  "skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "variant": 0,
+  "retrieval_canon": "open_the_top_drawer_and_put_the_bowl_inside",
+  "retrieval_para": "open_the_top_drawer_and_put_the_bowl_inside",
+  "llm_planner": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.7,
+  "direct_translate": "Open the top drawer and place the bowl inside."
+ },
+ {
+  "kind": "single",
+  "text": "一番上の引き出しを開けて、ボウルをその中に入れて",
+  "expect": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "source": "asr",
+  "query": "一番上の引き出しを開けて、ボールをその中に入れて、",
+  "skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "variant": 0,
+  "retrieval_canon": "open_the_top_drawer_and_put_the_bowl_inside",
+  "retrieval_para": "open_the_top_drawer_and_put_the_bowl_inside",
+  "llm_planner": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.55,
+  "direct_translate": "Open the top drawer and place the ball inside it."
+ },
+ {
+  "kind": "single",
+  "text": "上の引き出しにお椀しまっといて",
+  "expect": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "source": "text",
+  "query": "上の引き出しにお椀しまっといて",
+  "skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "variant": 1,
+  "retrieval_canon": "open_the_top_drawer_and_put_the_bowl_inside",
+  "retrieval_para": "open_the_top_drawer_and_put_the_bowl_inside",
+  "llm_planner": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.69,
+  "direct_translate": "Place the bowl in the upper drawer."
+ },
+ {
+  "kind": "single",
+  "text": "上の引き出しにお椀しまっといて",
+  "expect": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "source": "asr",
+  "query": "上の引き出しにお椀しまっといて。",
+  "skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "variant": 1,
+  "retrieval_canon": "open_the_top_drawer_and_put_the_bowl_inside",
+  "retrieval_para": "open_the_top_drawer_and_put_the_bowl_inside",
+  "llm_planner": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.54,
+  "direct_translate": "Place the bowl in the upper drawer."
+ },
+ {
+  "kind": "single",
+  "text": "ボウルはもう使わないから、上の段の引き出しに片付けて",
+  "expect": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "source": "text",
+  "query": "ボウルはもう使わないから、上の段の引き出しに片付けて",
+  "skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "variant": 2,
+  "retrieval_canon": "open_the_top_drawer_and_put_the_bowl_inside",
+  "retrieval_para": "open_the_top_drawer_and_put_the_bowl_inside",
+  "llm_planner": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.53,
+  "direct_translate": "Place the bowl in the upper drawer."
+ },
+ {
+  "kind": "single",
+  "text": "ボウルはもう使わないから、上の段の引き出しに片付けて",
+  "expect": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "source": "asr",
+  "query": "ボールはもう使わないから、上の段の引き出しに片付けて。",
+  "skill": "open_the_top_drawer_and_put_the_bowl_inside",
+  "variant": 2,
+  "retrieval_canon": "open_the_top_drawer_and_put_the_bowl_inside",
+  "retrieval_para": "open_the_middle_drawer_of_the_cabinet",
+  "llm_planner": [
+   "open_the_top_drawer_and_put_the_bowl_inside"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.55,
+  "direct_translate": "Place the ball in the drawer on the upper shelf."
+ },
+ {
+  "kind": "single",
+  "text": "ボウルを棚の上に置いて",
+  "expect": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "source": "text",
+  "query": "ボウルを棚の上に置いて",
+  "skill": "put_the_bowl_on_top_of_the_cabinet",
+  "variant": 0,
+  "retrieval_canon": "put_the_bowl_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_bowl_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.6,
+  "direct_translate": "Place the bowl on top of the shelf."
+ },
+ {
+  "kind": "single",
+  "text": "ボウルを棚の上に置いて",
+  "expect": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "source": "asr",
+  "query": "ボールを棚の上に置いて、",
+  "skill": "put_the_bowl_on_top_of_the_cabinet",
+  "variant": 0,
+  "retrieval_canon": "put_the_bowl_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_bowl_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.42,
+  "direct_translate": "Place the ball on top of the shelf."
+ },
+ {
+  "kind": "single",
+  "text": "お椀、キャビネットの上にのせといて",
+  "expect": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "source": "text",
+  "query": "お椀、キャビネットの上にのせといて",
+  "skill": "put_the_bowl_on_top_of_the_cabinet",
+  "variant": 1,
+  "retrieval_canon": "put_the_bowl_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_bowl_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.39,
+  "direct_translate": "Place the bowl on top of the cabinet."
+ },
+ {
+  "kind": "single",
+  "text": "お椀、キャビネットの上にのせといて",
+  "expect": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "source": "asr",
+  "query": "お椀、キャビネットの上に乗せといて。",
+  "skill": "put_the_bowl_on_top_of_the_cabinet",
+  "variant": 1,
+  "retrieval_canon": "put_the_bowl_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_bowl_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.62,
+  "direct_translate": "Place the bowl on top of the cabinet."
+ },
+ {
+  "kind": "single",
+  "text": "ボウルは使い終わったから、棚の天板の上に上げておいて",
+  "expect": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "source": "text",
+  "query": "ボウルは使い終わったから、棚の天板の上に上げておいて",
+  "skill": "put_the_bowl_on_top_of_the_cabinet",
+  "variant": 2,
+  "retrieval_canon": "put_the_bowl_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_bowl_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.47,
+  "direct_translate": "Place the bowl on top of the shelf."
+ },
+ {
+  "kind": "single",
+  "text": "ボウルは使い終わったから、棚の天板の上に上げておいて",
+  "expect": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "source": "asr",
+  "query": "ボールは使い終わったから、棚の手に板の上に上げておいて。",
+  "skill": "put_the_bowl_on_top_of_the_cabinet",
+  "variant": 2,
+  "retrieval_canon": "put_the_bowl_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_bowl_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_bowl_on_top_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.48,
+  "direct_translate": "Place the ball on top of the board in the hand of the shelf."
+ },
+ {
+  "kind": "single",
+  "text": "お皿をコンロの手前まで押して",
+  "expect": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "source": "text",
+  "query": "お皿をコンロの手前まで押して",
+  "skill": "push_the_plate_to_the_front_of_the_stove",
+  "variant": 0,
+  "retrieval_canon": "push_the_plate_to_the_front_of_the_stove",
+  "retrieval_para": "push_the_plate_to_the_front_of_the_stove",
+  "llm_planner": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.58,
+  "direct_translate": "Push the plate forward toward the stove."
+ },
+ {
+  "kind": "single",
+  "text": "お皿をコンロの手前まで押して",
+  "expect": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "source": "asr",
+  "query": "お皿をコンロの手前まで押して、",
+  "skill": "push_the_plate_to_the_front_of_the_stove",
+  "variant": 0,
+  "retrieval_canon": "push_the_plate_to_the_front_of_the_stove",
+  "retrieval_para": "push_the_plate_to_the_front_of_the_stove",
+  "llm_planner": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.68,
+  "direct_translate": "Push the plate forward toward the stove."
+ },
+ {
+  "kind": "single",
+  "text": "皿、コンロの前に寄せといて",
+  "expect": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "source": "text",
+  "query": "皿、コンロの前に寄せといて",
+  "skill": "push_the_plate_to_the_front_of_the_stove",
+  "variant": 1,
+  "retrieval_canon": "push_the_plate_to_the_front_of_the_stove",
+  "retrieval_para": "push_the_plate_to_the_front_of_the_stove",
+  "llm_planner": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.91,
+  "direct_translate": "Bring the plate to the front of the stove."
+ },
+ {
+  "kind": "single",
+  "text": "皿、コンロの前に寄せといて",
+  "expect": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "source": "asr",
+  "query": "さら、コンロの前に寄せといて。",
+  "skill": "push_the_plate_to_the_front_of_the_stove",
+  "variant": 1,
+  "retrieval_canon": "push_the_plate_to_the_front_of_the_stove",
+  "retrieval_para": "put_the_bowl_on_the_stove",
+  "llm_planner": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.0,
+  "direct_translate": "Move to the front of the stove."
+ },
+ {
+  "kind": "single",
+  "text": "盛り付けしやすいように、平皿をコンロの前までずらしておいて",
+  "expect": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "source": "text",
+  "query": "盛り付けしやすいように、平皿をコンロの前までずらしておいて",
+  "skill": "push_the_plate_to_the_front_of_the_stove",
+  "variant": 2,
+  "retrieval_canon": "put_the_bowl_on_the_plate",
+  "retrieval_para": "push_the_plate_to_the_front_of_the_stove",
+  "llm_planner": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.98,
+  "direct_translate": "Move the flat plate forward to the front of the stove for easier plating."
+ },
+ {
+  "kind": "single",
+  "text": "盛り付けしやすいように、平皿をコンロの前までずらしておいて",
+  "expect": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "source": "asr",
+  "query": "盛り付けしやすいように、平皿をコンロの前までずらしておいて、",
+  "skill": "push_the_plate_to_the_front_of_the_stove",
+  "variant": 2,
+  "retrieval_canon": "put_the_bowl_on_the_plate",
+  "retrieval_para": "push_the_plate_to_the_front_of_the_stove",
+  "llm_planner": [
+   "push_the_plate_to_the_front_of_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.86,
+  "direct_translate": "Move the flat plate forward to the front of the stove for easier plating."
+ },
+ {
+  "kind": "single",
+  "text": "クリームチーズをボウルに入れて",
+  "expect": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "source": "text",
+  "query": "クリームチーズをボウルに入れて",
+  "skill": "put_the_cream_cheese_in_the_bowl",
+  "variant": 0,
+  "retrieval_canon": "put_the_cream_cheese_in_the_bowl",
+  "retrieval_para": "put_the_cream_cheese_in_the_bowl",
+  "llm_planner": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.14,
+  "direct_translate": "Place the cream cheese into the bowl."
+ },
+ {
+  "kind": "single",
+  "text": "クリームチーズをボウルに入れて",
+  "expect": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "source": "asr",
+  "query": "クリームチーズをボウルに入れて",
+  "skill": "put_the_cream_cheese_in_the_bowl",
+  "variant": 0,
+  "retrieval_canon": "put_the_cream_cheese_in_the_bowl",
+  "retrieval_para": "put_the_cream_cheese_in_the_bowl",
+  "llm_planner": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.13,
+  "direct_translate": "Place the cream cheese into the bowl."
+ },
+ {
+  "kind": "single",
+  "text": "クリームチーズ、お椀に入れといて",
+  "expect": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "source": "text",
+  "query": "クリームチーズ、お椀に入れといて",
+  "skill": "put_the_cream_cheese_in_the_bowl",
+  "variant": 1,
+  "retrieval_canon": "put_the_cream_cheese_in_the_bowl",
+  "retrieval_para": "put_the_cream_cheese_in_the_bowl",
+  "llm_planner": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.9,
+  "direct_translate": "Place the cream cheese in the bowl."
+ },
+ {
+  "kind": "single",
+  "text": "クリームチーズ、お椀に入れといて",
+  "expect": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "source": "asr",
+  "query": "クリームチーズお椀に入れといて",
+  "skill": "put_the_cream_cheese_in_the_bowl",
+  "variant": 1,
+  "retrieval_canon": "put_the_cream_cheese_in_the_bowl",
+  "retrieval_para": "put_the_cream_cheese_in_the_bowl",
+  "llm_planner": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.98,
+  "direct_translate": "Place the cream cheese into the bowl."
+ },
+ {
+  "kind": "single",
+  "text": "ディップを作りたいから、チーズの箱を器の中に入れて",
+  "expect": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "source": "text",
+  "query": "ディップを作りたいから、チーズの箱を器の中に入れて",
+  "skill": "put_the_cream_cheese_in_the_bowl",
+  "variant": 2,
+  "retrieval_canon": "open_the_top_drawer_and_put_the_bowl_inside",
+  "retrieval_para": "open_the_top_drawer_and_put_the_bowl_inside",
+  "llm_planner": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.17,
+  "direct_translate": "Place the cheese box inside the container."
+ },
+ {
+  "kind": "single",
+  "text": "ディップを作りたいから、チーズの箱を器の中に入れて",
+  "expect": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "source": "asr",
+  "query": "リップを作りたいから、チーズの箱を器の中に入れて、",
+  "skill": "put_the_cream_cheese_in_the_bowl",
+  "variant": 2,
+  "retrieval_canon": "put_the_cream_cheese_in_the_bowl",
+  "retrieval_para": "put_the_cream_cheese_in_the_bowl",
+  "llm_planner": [
+   "put_the_cream_cheese_in_the_bowl"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.24,
+  "direct_translate": "Place the cheese box inside the container."
+ },
+ {
+  "kind": "single",
+  "text": "コンロの火をつけて",
+  "expect": [
+   "turn_on_the_stove"
+  ],
+  "source": "text",
+  "query": "コンロの火をつけて",
+  "skill": "turn_on_the_stove",
+  "variant": 0,
+  "retrieval_canon": "turn_on_the_stove",
+  "retrieval_para": "turn_on_the_stove",
+  "llm_planner": [
+   "turn_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.03,
+  "direct_translate": "Light the stove's flame."
+ },
+ {
+  "kind": "single",
+  "text": "コンロの火をつけて",
+  "expect": [
+   "turn_on_the_stove"
+  ],
+  "source": "asr",
+  "query": "コンロの火をつけて",
+  "skill": "turn_on_the_stove",
+  "variant": 0,
+  "retrieval_canon": "turn_on_the_stove",
+  "retrieval_para": "turn_on_the_stove",
+  "llm_planner": [
+   "turn_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.93,
+  "direct_translate": "Light the stove's flame."
+ },
+ {
+  "kind": "single",
+  "text": "コンロつけといてくれる？",
+  "expect": [
+   "turn_on_the_stove"
+  ],
+  "source": "text",
+  "query": "コンロつけといてくれる？",
+  "skill": "turn_on_the_stove",
+  "variant": 1,
+  "retrieval_canon": "turn_on_the_stove",
+  "retrieval_para": "turn_on_the_stove",
+  "llm_planner": [
+   "turn_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 2.87,
+  "direct_translate": "Please turn on the stove."
+ },
+ {
+  "kind": "single",
+  "text": "コンロつけといてくれる？",
+  "expect": [
+   "turn_on_the_stove"
+  ],
+  "source": "asr",
+  "query": "コンロつけといてくれる?",
+  "skill": "turn_on_the_stove",
+  "variant": 1,
+  "retrieval_canon": "turn_on_the_stove",
+  "retrieval_para": "turn_on_the_stove",
+  "llm_planner": [
+   "turn_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.07,
+  "direct_translate": "Turn on the stove."
+ },
+ {
+  "kind": "single",
+  "text": "お湯を沸かしたいから、加熱器のスイッチを入れて",
+  "expect": [
+   "turn_on_the_stove"
+  ],
+  "source": "text",
+  "query": "お湯を沸かしたいから、加熱器のスイッチを入れて",
+  "skill": "turn_on_the_stove",
+  "variant": 2,
+  "retrieval_canon": "turn_on_the_stove",
+  "retrieval_para": "turn_on_the_stove",
+  "llm_planner": [
+   "turn_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.04,
+  "direct_translate": "Turn on the heater switch to boil the water."
+ },
+ {
+  "kind": "single",
+  "text": "お湯を沸かしたいから、加熱器のスイッチを入れて",
+  "expect": [
+   "turn_on_the_stove"
+  ],
+  "source": "asr",
+  "query": "お湯を2日したいから、加熱器のスイッチを入れて、",
+  "skill": "turn_on_the_stove",
+  "variant": 2,
+  "retrieval_canon": "turn_on_the_stove",
+  "retrieval_para": "turn_on_the_stove",
+  "llm_planner": [
+   "turn_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.18,
+  "direct_translate": "Heat the water for two days by turning on the heater switch."
+ },
+ {
+  "kind": "single",
+  "text": "ボウルをお皿の上にのせて",
+  "expect": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "source": "text",
+  "query": "ボウルをお皿の上にのせて",
+  "skill": "put_the_bowl_on_the_plate",
+  "variant": 0,
+  "retrieval_canon": "put_the_bowl_on_top_of_the_cabinet",
+  "retrieval_para": "put_the_bowl_on_the_plate",
+  "llm_planner": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.18,
+  "direct_translate": "Place the bowl on top of the plate."
+ },
+ {
+  "kind": "single",
+  "text": "ボウルをお皿の上にのせて",
+  "expect": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "source": "asr",
+  "query": "ボールをお皿の上に乗せて、",
+  "skill": "put_the_bowl_on_the_plate",
+  "variant": 0,
+  "retrieval_canon": "put_the_bowl_on_the_plate",
+  "retrieval_para": "put_the_bowl_on_the_plate",
+  "llm_planner": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.24,
+  "direct_translate": "Place the ball on top of the plate."
+ },
+ {
+  "kind": "single",
+  "text": "お椀、皿にのせといて",
+  "expect": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "source": "text",
+  "query": "お椀、皿にのせといて",
+  "skill": "put_the_bowl_on_the_plate",
+  "variant": 1,
+  "retrieval_canon": "put_the_bowl_on_the_plate",
+  "retrieval_para": "put_the_bowl_on_the_plate",
+  "llm_planner": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.51,
+  "direct_translate": "Place the bowl on the plate."
+ },
+ {
+  "kind": "single",
+  "text": "お椀、皿にのせといて",
+  "expect": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "source": "asr",
+  "query": "お椀、皿にのせといて。",
+  "skill": "put_the_bowl_on_the_plate",
+  "variant": 1,
+  "retrieval_canon": "put_the_bowl_on_the_plate",
+  "retrieval_para": "put_the_bowl_on_the_plate",
+  "llm_planner": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.46,
+  "direct_translate": "Place the bowl on the plate."
+ },
+ {
+  "kind": "single",
+  "text": "配膳したいので、器を平皿の上に重ねておいて",
+  "expect": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "source": "text",
+  "query": "配膳したいので、器を平皿の上に重ねておいて",
+  "skill": "put_the_bowl_on_the_plate",
+  "variant": 2,
+  "retrieval_canon": "put_the_bowl_on_the_plate",
+  "retrieval_para": "put_the_bowl_on_the_plate",
+  "llm_planner": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.46,
+  "direct_translate": "Place the dishes on top of the serving tray."
+ },
+ {
+  "kind": "single",
+  "text": "配膳したいので、器を平皿の上に重ねておいて",
+  "expect": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "source": "asr",
+  "query": "配膳したいので器を平皿の上に重ねておいて",
+  "skill": "put_the_bowl_on_the_plate",
+  "variant": 2,
+  "retrieval_canon": "put_the_bowl_on_the_plate",
+  "retrieval_para": "put_the_bowl_on_the_plate",
+  "llm_planner": [
+   "put_the_bowl_on_the_plate"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.5,
+  "direct_translate": "Place the dishes on top of each other on the flat plate."
+ },
+ {
+  "kind": "single",
+  "text": "ワインボトルをワインラックに置いて",
+  "expect": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "source": "text",
+  "query": "ワインボトルをワインラックに置いて",
+  "skill": "put_the_wine_bottle_on_the_rack",
+  "variant": 0,
+  "retrieval_canon": "put_the_wine_bottle_on_the_rack",
+  "retrieval_para": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.55,
+  "direct_translate": "Place the wine bottle in the wine rack."
+ },
+ {
+  "kind": "single",
+  "text": "ワインボトルをワインラックに置いて",
+  "expect": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "source": "asr",
+  "query": "ワインボトルをワインラックに置いて、",
+  "skill": "put_the_wine_bottle_on_the_rack",
+  "variant": 0,
+  "retrieval_canon": "put_the_wine_bottle_on_the_rack",
+  "retrieval_para": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.32,
+  "direct_translate": "Place the wine bottle in the wine rack."
+ },
+ {
+  "kind": "single",
+  "text": "ワイン、ラックに戻しといて",
+  "expect": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "source": "text",
+  "query": "ワイン、ラックに戻しといて",
+  "skill": "put_the_wine_bottle_on_the_rack",
+  "variant": 1,
+  "retrieval_canon": "put_the_wine_bottle_on_the_rack",
+  "retrieval_para": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.34,
+  "direct_translate": "Return the wine to the rack."
+ },
+ {
+  "kind": "single",
+  "text": "ワイン、ラックに戻しといて",
+  "expect": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "source": "asr",
+  "query": "ワイン、ラックに戻しといて。",
+  "skill": "put_the_wine_bottle_on_the_rack",
+  "variant": 1,
+  "retrieval_canon": "put_the_wine_bottle_on_the_rack",
+  "retrieval_para": "put_the_wine_bottle_on_the_rack",
+  "llm_planner": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 3.42,
+  "direct_translate": "Return the wine to the rack."
+ },
+ {
+  "kind": "single",
+  "text": "ワインは保管用の棚に寝かせて片付けておいて",
+  "expect": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "source": "text",
+  "query": "ワインは保管用の棚に寝かせて片付けておいて",
+  "skill": "put_the_wine_bottle_on_the_rack",
+  "variant": 2,
+  "retrieval_canon": "put_the_wine_bottle_on_the_rack",
+  "retrieval_para": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.11,
+  "direct_translate": "Place the wine bottles on the storage shelf in an upright position."
+ },
+ {
+  "kind": "single",
+  "text": "ワインは保管用の棚に寝かせて片付けておいて",
+  "expect": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "source": "asr",
+  "query": "ワインは保管用の棚に寝かせて片付けておいて、",
+  "skill": "put_the_wine_bottle_on_the_rack",
+  "variant": 2,
+  "retrieval_canon": "put_the_wine_bottle_on_the_rack",
+  "retrieval_para": "put_the_wine_bottle_on_top_of_the_cabinet",
+  "llm_planner": [
+   "put_the_wine_bottle_on_the_rack"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.52,
+  "direct_translate": "Place the wine bottles on the storage shelf in an upright position."
+ },
+ {
+  "kind": "multi",
+  "text": "これから料理をするので、コンロの火をつけて、そのあとボウルをコンロの上に置いてくれる？",
+  "expect": [
+   "turn_on_the_stove",
+   "put_the_bowl_on_the_stove"
+  ],
+  "source": "text",
+  "query": "これから料理をするので、コンロの火をつけて、そのあとボウルをコンロの上に置いてくれる？",
+  "llm_planner": [
+   "turn_on_the_stove",
+   "put_the_bowl_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.64,
+  "direct_translate": "Turn on the stove and place the bowl on top of it."
+ },
+ {
+  "kind": "multi",
+  "text": "これから料理をするので、コンロの火をつけて、そのあとボウルをコンロの上に置いてくれる？",
+  "expect": [
+   "turn_on_the_stove",
+   "put_the_bowl_on_the_stove"
+  ],
+  "source": "asr",
+  "query": "これから料理をするので、コンロの火をつけて、その後ボールをコンロの上に置いてくれる?",
+  "llm_planner": [
+   "turn_on_the_stove",
+   "put_the_bowl_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.62,
+  "direct_translate": "Turn on the stove and place the bowl on top of the stove."
+ },
+ {
+  "kind": "multi",
+  "text": "クリームチーズをボウルに入れてから、そのボウルをお皿にのせて",
+  "expect": [
+   "put_the_cream_cheese_in_the_bowl",
+   "put_the_bowl_on_the_plate"
+  ],
+  "source": "text",
+  "query": "クリームチーズをボウルに入れてから、そのボウルをお皿にのせて",
+  "llm_planner": [
+   "put_the_cream_cheese_in_the_bowl",
+   "put_the_bowl_on_the_plate"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.06,
+  "direct_translate": "Put the cream cheese in the bowl, then place the bowl on the plate."
+ },
+ {
+  "kind": "multi",
+  "text": "クリームチーズをボウルに入れてから、そのボウルをお皿にのせて",
+  "expect": [
+   "put_the_cream_cheese_in_the_bowl",
+   "put_the_bowl_on_the_plate"
+  ],
+  "source": "asr",
+  "query": "クリームチーズをボウルに入れてからそのボウルをお皿に乗せて",
+  "llm_planner": [
+   "put_the_cream_cheese_in_the_bowl",
+   "put_the_bowl_on_the_plate"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.25,
+  "direct_translate": "Put the cream cheese into the bowl, then place the bowl on the plate."
+ },
+ {
+  "kind": "multi",
+  "text": "ワインをラックに戻して、ついでに真ん中の引き出しも開けといて",
+  "expect": [
+   "put_the_wine_bottle_on_the_rack",
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "source": "text",
+  "query": "ワインをラックに戻して、ついでに真ん中の引き出しも開けといて",
+  "llm_planner": [
+   "put_the_wine_bottle_on_the_rack",
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.46,
+  "direct_translate": "Return the wine to the rack and open the middle drawer as well."
+ },
+ {
+  "kind": "multi",
+  "text": "ワインをラックに戻して、ついでに真ん中の引き出しも開けといて",
+  "expect": [
+   "put_the_wine_bottle_on_the_rack",
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "source": "asr",
+  "query": "ワインをラックに戻して、ついでに真ん中の引き出しも開けといて。",
+  "llm_planner": [
+   "put_the_wine_bottle_on_the_rack",
+   "open_the_middle_drawer_of_the_cabinet"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.72,
+  "direct_translate": "Return the wine to the rack and open the middle drawer as well."
+ },
+ {
+  "kind": "multi",
+  "text": "お皿をコンロの前に寄せて、コンロの火もつけておいて",
+  "expect": [
+   "push_the_plate_to_the_front_of_the_stove",
+   "turn_on_the_stove"
+  ],
+  "source": "text",
+  "query": "お皿をコンロの前に寄せて、コンロの火もつけておいて",
+  "llm_planner": [
+   "push_the_plate_to_the_front_of_the_stove",
+   "turn_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.15,
+  "direct_translate": "Move the plate in front of the stove and turn on the stove's flame."
+ },
+ {
+  "kind": "multi",
+  "text": "お皿をコンロの前に寄せて、コンロの火もつけておいて",
+  "expect": [
+   "push_the_plate_to_the_front_of_the_stove",
+   "turn_on_the_stove"
+  ],
+  "source": "asr",
+  "query": "お皿をコンロの前に寄せて、コンロの火もつけておいて。",
+  "llm_planner": [
+   "push_the_plate_to_the_front_of_the_stove",
+   "turn_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.37,
+  "direct_translate": "Move the plate in front of the stove and turn on the stove's flame."
+ },
+ {
+  "kind": "multi",
+  "text": "ワインボトルを棚の上に片付けてから、コンロをつけて",
+  "expect": [
+   "put_the_wine_bottle_on_top_of_the_cabinet",
+   "turn_on_the_stove"
+  ],
+  "source": "text",
+  "query": "ワインボトルを棚の上に片付けてから、コンロをつけて",
+  "llm_planner": [
+   "put_the_wine_bottle_on_top_of_the_cabinet",
+   "turn_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.47,
+  "direct_translate": "Place the wine bottle on the shelf, then turn on the stove."
+ },
+ {
+  "kind": "multi",
+  "text": "ワインボトルを棚の上に片付けてから、コンロをつけて",
+  "expect": [
+   "put_the_wine_bottle_on_top_of_the_cabinet",
+   "turn_on_the_stove"
+  ],
+  "source": "asr",
+  "query": "ワインボトルを棚の上に片付けてから、コンロをつけて、",
+  "llm_planner": [
+   "put_the_wine_bottle_on_top_of_the_cabinet",
+   "turn_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.62,
+  "direct_translate": "Place the wine bottle on the shelf, then turn on the stove."
+ },
+ {
+  "kind": "multi",
+  "text": "真ん中の引き出しを開けて、それからワインをラックに置いて、最後にコンロをつけて",
+  "expect": [
+   "open_the_middle_drawer_of_the_cabinet",
+   "put_the_wine_bottle_on_the_rack",
+   "turn_on_the_stove"
+  ],
+  "source": "text",
+  "query": "真ん中の引き出しを開けて、それからワインをラックに置いて、最後にコンロをつけて",
+  "llm_planner": [
+   "open_the_middle_drawer_of_the_cabinet",
+   "put_the_wine_bottle_on_the_rack",
+   "turn_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.41,
+  "direct_translate": "Open the middle drawer, place the wine on the rack, and then turn on the stove."
+ },
+ {
+  "kind": "multi",
+  "text": "真ん中の引き出しを開けて、それからワインをラックに置いて、最後にコンロをつけて",
+  "expect": [
+   "open_the_middle_drawer_of_the_cabinet",
+   "put_the_wine_bottle_on_the_rack",
+   "turn_on_the_stove"
+  ],
+  "source": "asr",
+  "query": "真ん中の引き出しを開けて、それからワインをラックに置いて、最後にコンロをつけて。",
+  "llm_planner": [
+   "open_the_middle_drawer_of_the_cabinet",
+   "put_the_wine_bottle_on_the_rack",
+   "turn_on_the_stove"
+  ],
+  "llm_unsupported": "",
+  "llm_latency_s": 4.13,
+  "direct_translate": "Open the middle drawer, place the wine on the rack, and then turn on the stove."
+ },
+ {
+  "kind": "unsupported",
+  "text": "冷蔵庫から牛乳を出して",
+  "expect": [],
+  "source": "text",
+  "query": "冷蔵庫から牛乳を出して",
+  "llm_planner": [],
+  "llm_unsupported": "依頼に含まれる「冷蔵庫から牛乳を出して」という動作は、スキル一覧に存在しないため実行できません。",
+  "llm_latency_s": 3.27
+ },
+ {
+  "kind": "unsupported",
+  "text": "冷蔵庫から牛乳を出して",
+  "expect": [],
+  "source": "asr",
+  "query": "冷蔵庫から牛乳を出して、",
+  "llm_planner": [],
+  "llm_unsupported": "依頼に含まれる「冷蔵庫から牛乳を出して」という動作は、スキル一覧に存在しないため実行できません。",
+  "llm_latency_s": 2.85
+ },
+ {
+  "kind": "unsupported",
+  "text": "お皿を洗っておいて",
+  "expect": [],
+  "source": "text",
+  "query": "お皿を洗っておいて",
+  "llm_planner": [],
+  "llm_unsupported": "お皿を洗う動作はスキル一覧に含まれていません。",
+  "llm_latency_s": 2.71
+ },
+ {
+  "kind": "unsupported",
+  "text": "お皿を洗っておいて",
+  "expect": [],
+  "source": "asr",
+  "query": "お皿を洗っておいて。",
+  "llm_planner": [],
+  "llm_unsupported": "「お皿を洗っておいて」はスキル一覧に直接対応するスキルがありません。",
+  "llm_latency_s": 2.79
+ },
+ {
+  "kind": "unsupported",
+  "text": "窓を開けて換気して",
+  "expect": [],
+  "source": "text",
+  "query": "窓を開けて換気して",
+  "llm_planner": [],
+  "llm_unsupported": "窓を開けるスキルはスキル一覧にありません",
+  "llm_latency_s": 5.33
+ },
+ {
+  "kind": "unsupported",
+  "text": "窓を開けて換気して",
+  "expect": [],
+  "source": "asr",
+  "query": "窓を開けて、換気して、",
+  "llm_planner": [],
+  "llm_unsupported": "窓を開ける動作や換気を行うスキルはスキル一覧に存在しません。",
+  "llm_latency_s": 2.67
+ }
+]

@@ -19,16 +19,24 @@ cp outputs/eval/vla_instructions.json outputs/eval/vla_results.jsonl outputs/eva
 ("${SIM[@]}" scripts/record_contrast.py --server "http://127.0.0.1:$PORT" | tee outputs/record_contrast.log) || echo "[run_all] 比較デモの収録をスキップ"
 # 2) 複数ステップ依頼の完遂率
 "${SIM[@]}" scripts/eval_chain.py --server "http://127.0.0.1:$PORT" | tee outputs/eval_chain.log
-# 3) デモ収録（720p）
-for run in demo1 refusal; do
-  "${SIM[@]}" scripts/execute_plan.py --run outputs/runs/$run --server "http://127.0.0.1:$PORT" --init 0
-done
+# 3) デモ収録（720p）。デモ 1 は、評価で同じ依頼を完遂できた初期状態で撮る（成功率は評価側ですべて報告する）
+DEMO_INIT=$(.venv/bin/python - <<'PY'
+import json
+plan = json.load(open("outputs/runs/demo1/plan.json"))
+steps = [s["skill_id"] for s in plan["plan"]["steps"]]
+rows = json.load(open("outputs/eval/chain_results.json"))
+ok = [r["init"] for r in rows if r["mode"] == "full" and r["plan"] == steps and r["chain_success"]]
+print(ok[0] if ok else 0)
+PY
+)
+echo "[run_all] demo1 init=$DEMO_INIT"
+"${SIM[@]}" scripts/execute_plan.py --run outputs/runs/demo1 --server "http://127.0.0.1:$PORT" --init "$DEMO_INIT"
+"${SIM[@]}" scripts/execute_plan.py --run outputs/runs/refusal --server "http://127.0.0.1:$PORT" --init 0
+"${SIM[@]}" scripts/render_stills.py
 curl -s "http://127.0.0.1:$PORT/health" > outputs/vla_server_stats.json
 
 # 4) 結果を results/ に集約（版管理する）
-cp outputs/eval/planner_summary_dev.json outputs/eval/planner_summary_holdout.json \
-   outputs/eval/planner_rows_dev.json outputs/eval/planner_rows_holdout.json \
-   outputs/eval/vla_instructions.json outputs/eval/vla_results.jsonl outputs/eval/vla_summary.json \
+cp outputs/eval/vla_instructions.json outputs/eval/vla_results.jsonl outputs/eval/vla_summary.json \
    outputs/eval/chain_results.json outputs/eval/chain_summary.json results/
 .venv/bin/python - <<'PY'
 import json

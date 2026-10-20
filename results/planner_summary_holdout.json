@@ -1,0 +1,29 @@
+{
+ "text": {
+  "n_single": 20,
+  "retrieval_canon_acc": 0.8,
+  "retrieval_para_acc": 0.8,
+  "llm_single_acc": 1.0,
+  "direct_in_distribution": 0.0,
+  "direct_exact_correct": 0.0,
+  "n_multi": 4,
+  "llm_multi_exact": 1.0,
+  "n_unsupported": 2,
+  "llm_refusal": 1.0,
+  "llm_latency_mean_s": 3.07
+ },
+ "asr": {
+  "n_single": 20,
+  "retrieval_canon_acc": 0.8,
+  "retrieval_para_acc": 0.8,
+  "llm_single_acc": 0.95,
+  "direct_in_distribution": 0.0,
+  "direct_exact_correct": 0.0,
+  "n_multi": 4,
+  "llm_multi_exact": 1.0,
+  "n_unsupported": 2,
+  "llm_refusal": 1.0,
+  "llm_latency_mean_s": 3.11
+ },
+ "asr_latency_mean_s": 0.3
+}
